@@ -330,49 +330,49 @@ function loadBackupData() {
 // Configuración de iconos para reportes ciudadanos
 const citizenReportIcons = {
     'accidente_vial': L.icon({
-        iconUrl: '/static/img/citizen_accident.png',
+        iconUrl: '/static/img/accident.png',
         iconSize: [32, 32],
         iconAnchor: [16, 32],
         popupAnchor: [0, -32]
     }),
     'bloqueo_vial': L.icon({
-        iconUrl: '/static/img/citizen_blockade.png',
+        iconUrl: '/static/img/blockade.png',
         iconSize: [32, 32],
         iconAnchor: [16, 32],
         popupAnchor: [0, -32]
     }),
     'trafico_intenso': L.icon({
-        iconUrl: '/static/img/citizen_traffic.png',
+        iconUrl: '/static/img/traffic.png',
         iconSize: [32, 32],
         iconAnchor: [16, 32],
         popupAnchor: [0, -32]
     }),
     'robo': L.icon({
-        iconUrl: '/static/img/citizen_theft.png',
+        iconUrl: '/static/img/theft.png',
         iconSize: [32, 32],
         iconAnchor: [16, 32],
         popupAnchor: [0, -32]
     }),
     'disturbio': L.icon({
-        iconUrl: '/static/img/citizen_disturbance.png',
+        iconUrl: '/static/img/disturbance.png',
         iconSize: [32, 32],
         iconAnchor: [16, 32],
         popupAnchor: [0, -32]
     }),
     'operativo_policial': L.icon({
-        iconUrl: '/static/img/citizen_police.png',
+        iconUrl: '/static/img/police.png',
         iconSize: [32, 32],
         iconAnchor: [16, 32],
         popupAnchor: [0, -32]
     }),
     'manifestacion': L.icon({
-        iconUrl: '/static/img/citizen_protest.png',
+        iconUrl: '/static/img/protest.png',
         iconSize: [32, 32],
         iconAnchor: [16, 32],
         popupAnchor: [0, -32]
     }),
     'otro': L.icon({
-        iconUrl: '/static/img/citizen_other.png',
+        iconUrl: '/static/img/other.png',
         iconSize: [32, 32],
         iconAnchor: [16, 32],
         popupAnchor: [0, -32]

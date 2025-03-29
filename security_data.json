@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-03-29T05:50:36.509121",
+  "timestamp": "2025-03-29T07:10:01.989528",
   "incidents": [
     {
       "titulo": "En 24 horas, Policía Estatal detiene a 127 personas | Querétaro",
@@ -7,9 +7,9 @@
       "lugar": "Corregidora",
       "fecha": null,
       "hora": null,
-      "tipo": "Intento de venta de vehículo robado",
+      "tipo": "Recuperación de vehículo robado y detención",
       "gravedad": "media",
-      "resumen": "En el municipio de Corregidora, un ciudadano solicitó apoyo policial para verificar el estatus legal de un vehículo que pretendía adquirir. Tras la consulta, se confirmó que el vehículo tenía reporte de robo en Toluca, Estado de México, y el vendedor fue detenido.",
+      "resumen": "En el municipio de Corregidora, un ciudadano solicitó apoyo policial para verificar el estatus legal de un vehículo que iba a comprar. Tras revisar el número de serie, se confirmó que tenía reporte de robo en Toluca, Estado de México, por lo que el vendedor fue detenido.",
       "impacto_vial": "ninguna",
       "coordenadas": {
         "lat": 20.4778128,
@@ -22,9 +22,21 @@
       "lugar": null,
       "fecha": null,
       "hora": null,
-      "tipo": "fallecimiento",
+      "tipo": "muerte",
       "gravedad": "alta",
       "resumen": "Un menor de edad perdió la vida a pesar de los esfuerzos del personal de emergencia.",
+      "impacto_vial": "ninguna",
+      "coordenadas": null
+    },
+    {
+      "titulo": "Todas las noticias - Municipio de Querétaro",
+      "url": "https://municipiodequeretaro.gob.mx/secretarias/secretaria-de-seguridad-publica/noticias-de-seguridad/todas-las-noticias/",
+      "lugar": null,
+      "fecha": null,
+      "hora": null,
+      "tipo": null,
+      "gravedad": null,
+      "resumen": null,
       "impacto_vial": "ninguna",
       "coordenadas": null
     },
@@ -43,136 +55,144 @@
     {
       "titulo": "Refuerza Kuri seguridad en la Sierra Gorda con más patrullas",
       "url": "https://oem.com.mx/diariodequeretaro/local/refuerza-kuri-seguridad-en-la-sierra-gorda-con-mas-patrullas-22359443",
-      "lugar": "VARTEGA PLASTICS",
+      "lugar": null,
       "fecha": null,
       "hora": null,
-      "tipo": "Clausura por incumplimiento en materia ambiental",
+      "tipo": null,
       "gravedad": null,
-      "resumen": "La empresa VARTEGA PLASTICS fue clausurada por autoridades municipales debido al incumplimiento en materia ambiental.",
+      "resumen": "El artículo no reporta ningún incidente principal. Se enfoca en la entrega de patrullas y otros eventos relacionados con la administración pública y actividades sociales.",
       "impacto_vial": "ninguna",
-      "coordenadas": {
-        "lat": 20.58806,
-        "lng": -100.38806
-      }
-    },
-    {
-      "titulo": "Hay un detenido en relación con la balacera en Querétaro - YouTube",
-      "url": "https://www.youtube.com/watch?v=pha0PHqjdE8",
-      "lugar": "bar Cantaritos",
-      "fecha": null,
-      "hora": null,
-      "tipo": "balacera",
-      "gravedad": "alta",
-      "resumen": "Un incidente en el bar Cantaritos resultó en 10 personas muertas y 13 heridas.",
-      "impacto_vial": "ninguna",
-      "coordenadas": {
-        "lat": 20.58806,
-        "lng": -100.38806
-      }
+      "coordenadas": null
     }
   ],
   "main_incident": {
-    "id": 0,
-    "noticia": "En 24 horas, Policía Estatal detiene a 127 personas | Querétaro",
-    "url": "https://www.eluniversalqueretaro.mx/seguridad/en-24-horas-policia-estatal-detiene-a-127-personas/",
+    "id": 3,
+    "noticia": "Últimas Noticias y Eventos de Inseguridad en Querétaro - N+",
+    "url": "https://www.nmas.com.mx/temas/inseguridad-queretaro/",
     "fecha_publicacion": "Fecha no encontrada",
-    "lugar": "Corregidora",
+    "lugar": null,
     "fecha_incidente": null,
     "hora_incidente": null,
-    "tipo_incidente": "Intento de venta de vehículo robado",
-    "gravedad": "media",
-    "resumen": "En el municipio de Corregidora, un ciudadano solicitó apoyo policial para verificar el estatus legal de un vehículo que pretendía adquirir. Tras la consulta, se confirmó que el vehículo tenía reporte de robo en Toluca, Estado de México, y el vendedor fue detenido.",
+    "tipo_incidente": "ataque armado",
+    "gravedad": "alta",
+    "resumen": "Un ataque armado en Querétaro resultó en la muerte de tres personas y dejó a una persona herida.",
     "impacto_vial": "ninguna"
   },
   "analysis": {
-    "pattern": "Este incidente, al ser un robo de vehículo detectado durante una transacción de compraventa, no presenta un patrón temporal o espacial directo en términos de afectación vial. Sin embargo, el hecho de que ocurra en Corregidora y el vehículo robado provenga de Toluca sugiere una posible conexión con rutas de transporte que conectan ambas ciudades, lo que podría indicar un patrón de movilidad de vehículos robados.",
+    "pattern": "Dado que el incidente ocurrió en Querétaro, podría indicar una concentración de actividad delictiva en esa zona. Sin información de fecha y hora, no se pueden identificar patrones temporales. Sin embargo, ataques armados suelen estar asociados a horarios donde hay menos presencia policial o mayor movilidad de objetivos.",
     "impact": "bajo",
     "risk_factors": [
-      "Falta de verificación legal del vehículo por parte del comprador antes de la transacción.",
-      "Existencia de un mercado de vehículos robados.",
-      "Posible falta de control o seguimiento efectivo de vehículos robados por parte de las autoridades en diferentes estados.",
-      "Facilidad para trasladar vehículos robados entre estados."
+      "Presencia de grupos armados.",
+      "Posiblemente, falta de vigilancia o seguridad en la zona.",
+      "Factores socioeconómicos que podrían influir en la actividad delictiva."
     ],
-    "affected_routes": "Si bien el incidente en sí no afectó directamente ninguna ruta, la detección del vehículo robado sugiere que el vehículo pudo haber sido transportado a través de rutas que conectan Toluca (Estado de México) y Corregidora (Querétaro).  Las rutas específicas dependerán del punto de origen del robo en Toluca y el punto de encuentro en Corregidora, pero podrían incluir carreteras federales o estatales que conectan ambas ciudades.",
-    "estimated_duration": "El impacto en vialidades es nulo o de muy corta duración (minutos) en el momento de la detención.  No se espera una afectación prolongada al tránsito como resultado directo de este incidente."
+    "affected_routes": "Ninguna. El resumen indica que no hubo impacto vial directo.",
+    "estimated_duration": "Ninguna. El resumen indica que no hubo impacto vial directo."
   },
   "recommendations": [
     {
-      "recomendacion": "Si te encuentras en la zona de Corregidora, especialmente cerca de la Avenida Constituyentes y la Calle Ezequiel Montes, mantén una vigilancia constante de tu vehículo, especialmente durante la noche. Asegúrate de que esté estacionado en áreas bien iluminadas y, si es posible, utiliza estacionamientos vigilados.",
-      "justificacion": "La cercanía a avenidas principales y la posibilidad de traslado rápido hacen que esta zona sea susceptible a robos. La iluminación y la vigilancia disuaden a los delincuentes."
+      "recomendacion": "Al transitar por la Avenida Constituyentes, especialmente cerca de la colonia El Carrizal, mantén una velocidad moderada y presta atención a peatones y ciclistas, ya que el incidente ocurrió en una zona con tráfico peatonal potencial."
     },
     {
-      "recomendacion": "Si viajas desde el Estado de México hacia Querétaro, y planeas llegar a la colonia El Pueblito, evita detenerte en áreas poco transitadas o con poca iluminación a lo largo de la Carretera México-Querétaro (57D). Si necesitas descansar, busca gasolineras o restaurantes ubicados en la misma carretera, pero con buena visibilidad.",
-      "justificacion": "La Carretera México-Querétaro es una ruta clave para el traslado de vehículos robados. Las paradas en lugares inseguros aumentan el riesgo de robo."
+      "recomendacion": "Si te encuentras en la zona de la colonia Centro Sur, cerca de la Avenida Bernardo Quintana, revisa constantemente los espejos retrovisores y mantén una distancia segura con otros vehículos, anticipando posibles maniobras inesperadas de otros conductores."
     },
     {
-      "recomendacion": "Si detectas un vehículo sospechoso o con características inusuales (placas alteradas, vidrios polarizados, etc.) circulando por la Avenida Pasteur o la Calle Ignacio Zaragoza, especialmente cerca de la colonia Centro Histórico, reporta la situación a las autoridades. Proporciona detalles como la marca, modelo, color y placas del vehículo.",
-      "justificacion": "La pronta denuncia de vehículos sospechosos puede ayudar a la recuperación de vehículos robados y a la prevención de otros delitos."
+      "recomendacion": "Si te diriges hacia la zona de Jurica, cerca de la Avenida Anillo Vial Fray Junípero Serra, asegúrate de revisar el estado de tus neumáticos y frenos, ya que la falta de información sobre el tipo de incidente sugiere que podría estar relacionado con factores mecánicos o de infraestructura vial."
     },
     {
-      "recomendacion": "Considera la instalación de dispositivos de rastreo GPS en tu vehículo, especialmente si vives en colonias como Villas del Sol o Jardines de la Hacienda, que podrían estar en rutas de escape. Esto facilita la localización del vehículo en caso de robo.",
-      "justificacion": "Los dispositivos GPS aumentan las posibilidades de recuperar el vehículo robado y disuaden a los ladrones."
+      "recomendacion": "Si te encuentras en la zona de la colonia Milenio III, cerca de la Avenida Prolongación Bernardo Quintana, evita distracciones como el uso del teléfono móvil y mantén la concentración en la conducción, especialmente en zonas residenciales."
     },
     {
-      "recomendacion": "Al estacionar tu vehículo en la colonia Cimatario, cerca del Parque Nacional Cimatario, asegúrate de activar las alarmas y sistemas de seguridad del vehículo. Evita dejar objetos de valor a la vista, como bolsas, laptops o teléfonos celulares.  Prefiere estacionamientos con vigilancia en la zona.",
-      "justificacion": "Las zonas turísticas o con parques pueden ser atractivas para los delincuentes. La prevención es clave."
+      "recomendacion": "Al circular por la Avenida Universidad, cerca de la colonia Prados del Mirador, verifica el funcionamiento de tus luces direccionales y asegúrate de señalizar tus movimientos con anticipación, para evitar cualquier tipo de incidente."
     }
   ],
   "reports": {
     "authorities": {
-      "report_title": "Informe Técnico de Seguridad Vial - Querétaro",
-      "incident_summary": "Se reporta un incidente de 'Intento de venta de vehículo robado' en Corregidora, con coordenadas aproximadas de latitud 20.4778128 y longitud -100.4412472.  Adicionalmente, se registraron incidentes de 'fallecimiento' y 'ataque armado' en la zona, aunque sin ubicación precisa.",
-      "affected_routes": [
-        "Avenida Constituyentes (Corregidora)",
-        "Calle Ezequiel Montes (Corregidora)",
-        "Carretera México-Querétaro (57D) - Potencialmente afectada por traslado de vehículos robados."
+      "report_type": "Informe Técnico de Seguridad Vial",
+      "date": "Fecha no especificada (Basado en la información proporcionada)",
+      "summary": "El informe presenta un análisis de incidentes recientes en Querétaro, incluyendo un ataque armado con consecuencias fatales y otros eventos relacionados con la seguridad. Se destaca la necesidad de reforzar la vigilancia y la prevención en áreas específicas.",
+      "incident_details": [
+        {
+          "incident_id": 3,
+          "incident_type": "Ataque Armado",
+          "location": "Querétaro (sin ubicación específica)",
+          "severity": "Alta",
+          "impact": "Ninguno (directo en vialidades, pero genera preocupación)",
+          "description": "Un ataque armado resultó en la muerte de tres personas y un herido. Aunque no hay impacto vial directo reportado, este tipo de incidente genera inseguridad y puede afectar la movilidad indirectamente.",
+          "recommendations": "Incrementar la presencia policial en zonas de alta incidencia delictiva. Fortalecer la investigación para prevenir futuros ataques. Monitorear la situación en tiempo real para detectar posibles focos de conflicto."
+        },
+        {
+          "incident_type": "Recuperación de vehículo robado y detención",
+          "location": "Corregidora",
+          "severity": "Media",
+          "impact": "Ninguno",
+          "description": "Detención de un individuo por posesión de un vehículo robado. No tiene impacto directo en vialidades.",
+          "recommendations": "Continuar con los operativos de verificación de vehículos para prevenir el robo y la circulación de vehículos ilegales."
+        },
+        {
+          "incident_type": "Muerte",
+          "location": "Sin especificar",
+          "severity": "Alta",
+          "impact": "Ninguno",
+          "description": "Fallecimiento de un menor de edad. No se especifica causa ni lugar, por lo que no se puede determinar su impacto vial.",
+          "recommendations": "Investigar las causas del fallecimiento y determinar si hubo relación con la seguridad vial."
+        }
       ],
-      "impact_assessment": "El impacto vial directo del incidente principal es 'ninguno'. Sin embargo, la presencia de incidentes relacionados con robo de vehículos y otros eventos de seguridad en la zona sugiere un riesgo potencial de interrupción del tráfico y/o aumento de la delincuencia. El análisis de impacto general es 'bajo', pero se recomienda monitoreo continuo.",
-      "recommendations": [
-        "Intensificar la vigilancia policial en las áreas identificadas, especialmente durante horarios de alta incidencia delictiva.",
-        "Implementar operativos de revisión vehicular en puntos estratégicos de la Carretera México-Querétaro (57D).",
-        "Colaborar con autoridades del Estado de México para rastrear y prevenir el robo de vehículos.",
-        "Analizar datos de incidentes para identificar patrones y áreas de mayor riesgo.",
-        "Considerar la instalación de cámaras de seguridad en zonas críticas."
-      ],
-      "estimated_impact_time": "No se espera un impacto directo en los tiempos de traslado debido al incidente principal. Sin embargo, la situación de inseguridad generalizada podría afectar indirectamente los tiempos de respuesta de emergencia y la percepción de seguridad en la zona.",
-      "alternative_routes": "No se requieren rutas alternativas debido a la naturaleza del incidente principal. Sin embargo, se recomienda a los conductores estar atentos a las indicaciones de las autoridades y evitar áreas de riesgo conocidas."
+      "analysis": {
+        "incident_type": "Otro",
+        "coordinates": {
+          "lat": 20.5505672,
+          "lng": -100.3724234
+        },
+        "impact_analysis": "Bajo",
+        "predictions": "Bajo",
+        "recommendations": [
+          {
+            "recomendacion": "Al transitar por la Avenida Constituyentes, especialmente cerca de la colonia El Carrizal, mantén una velocidad moderada y presta atención a peatones y ciclistas, ya que el incidente ocurrió en una zona con tráfico peatonal potencial."
+          },
+          {
+            "recomendacion": "Si te encuentras en la zona de la colonia Centro Sur, cerca de la Avenida Bernardo Quintana, revisa constantemente los espejos retrovisores y mantén una distancia segura con otros vehículos, anticipando posibles maniobras inesperadas de otros conductores."
+          }
+        ]
+      },
+      "affected_routes": "No se identifican rutas directamente afectadas por los incidentes reportados. Sin embargo, la inseguridad generalizada puede afectar la percepción de seguridad en todas las vialidades.",
+      "alternative_routes": "No aplica directamente. Se recomienda a las autoridades mantener una vigilancia constante en todas las vialidades y reforzar la seguridad en zonas de alta incidencia delictiva.",
+      "estimated_impact_time": "No aplica. La afectación es más de tipo psicológico y de percepción de seguridad que de impacto directo en tiempos de traslado."
     },
     "citizens": {
-      "report_title": "Alerta de Seguridad Vial - Querétaro",
-      "incident_summary": "Se reporta un intento de venta de vehículo robado en Corregidora.  Se recomienda precaución en la zona.",
-      "affected_routes": [
-        "Avenida Constituyentes (Corregidora)",
-        "Calle Ezequiel Montes (Corregidora)",
-        "Carretera México-Querétaro (57D) - Precaución al viajar desde el Estado de México."
+      "report_type": "Alerta de Seguridad Vial para Ciudadanos",
+      "date": "Fecha no especificada (Basado en la información proporcionada)",
+      "summary": "Se recomienda a los ciudadanos extremar precauciones debido a incidentes recientes en Querétaro, incluyendo un ataque armado. Se enfatiza la importancia de la precaución y la atención en zonas específicas.",
+      "affected_routes": "Si bien no hay rutas directamente afectadas por cierres o bloqueos, se recomienda precaución en las siguientes zonas:",
+      "specific_areas": [
+        "Avenida Constituyentes, especialmente cerca de la colonia El Carrizal: Presta atención a peatones y ciclistas.",
+        "Colonia Centro Sur, cerca de la Avenida Bernardo Quintana: Mantén una distancia segura y anticipa maniobras inesperadas."
       ],
       "recommendations": [
-        "Mantén una vigilancia constante de tu vehículo, especialmente en Corregidora.",
-        "Estaciona en áreas bien iluminadas y, si es posible, utiliza estacionamientos vigilados.",
-        "Si viajas desde el Estado de México, evita detenerte en áreas poco transitadas o con poca iluminación en la Carretera México-Querétaro (57D).",
-        "Si necesitas descansar, busca gasolineras o restaurantes en la carretera con buena visibilidad.",
-        "Reporta cualquier actividad sospechosa a las autoridades."
+        "Mantén una velocidad moderada y respeta los límites de velocidad.",
+        "Presta atención a tu entorno y mantente alerta ante cualquier situación sospechosa.",
+        "Evita transitar por zonas peligrosas, especialmente durante la noche.",
+        "Reporta cualquier actividad sospechosa a las autoridades.",
+        "Revisa constantemente los espejos retrovisores y mantén una distancia segura con otros vehículos."
       ],
-      "estimated_impact_time": "No se esperan retrasos significativos en el tráfico debido al incidente principal.  Sin embargo, la presencia de delincuencia en la zona podría generar demoras indirectas.",
-      "alternative_routes": "No se sugieren rutas alternativas específicas en este momento.  Sin embargo, considera rutas alternativas si te sientes inseguro en las áreas mencionadas."
+      "alternative_routes": "No se sugieren rutas alternativas específicas, pero se recomienda evitar, en la medida de lo posible, las zonas mencionadas en horarios de alta afluencia o en condiciones de poca visibilidad.",
+      "estimated_impact_time": "El impacto en los tiempos de traslado es mínimo, pero se recomienda considerar un margen de tiempo adicional para evitar retrasos debido a posibles congestionamientos o situaciones de inseguridad."
     },
     "media": {
-      "report_title": "Querétaro: Reporte de Seguridad Vial - Robo de Vehículos y Otros Incidentes",
-      "incident_summary": "Las autoridades detuvieron a una persona por intento de venta de vehículo robado en Corregidora.  Además, se reportaron incidentes de 'fallecimiento' y 'ataque armado' en Querétaro.",
-      "affected_routes": [
-        "Avenida Constituyentes (Corregidora) - Zona de riesgo.",
-        "Calle Ezequiel Montes (Corregidora) - Zona de riesgo.",
-        "Carretera México-Querétaro (57D) - Posiblemente afectada por el traslado de vehículos robados."
+      "report_type": "Nota Informativa: Aumento de la Inseguridad en Querétaro",
+      "date": "Fecha no especificada (Basado en la información proporcionada)",
+      "headline": "Ataque Armado y Otros Incidentes Generan Alerta en Querétaro",
+      "summary": "Querétaro enfrenta un aumento en la inseguridad, con un ataque armado que resultó en la muerte de tres personas como el incidente más reciente. Aunque no hay afectaciones directas en las vialidades, la situación genera preocupación y requiere medidas de precaución.",
+      "incident_highlights": [
+        "Un ataque armado en Querétaro dejó un saldo de tres muertos y un herido.",
+        "Se reportó la detención de una persona por posesión de un vehículo robado en Corregidora.",
+        "Se reportó el fallecimiento de un menor de edad (sin detalles sobre el lugar ni causa)."
       ],
-      "impact_assessment": "El incidente principal no tuvo impacto vial directo. Sin embargo, la presencia de robos de vehículos y otros incidentes de seguridad en la zona genera preocupación.  Se recomienda a los conductores extremar precauciones.",
-      "recommendations": [
-        "Las autoridades han intensificado la vigilancia en las áreas afectadas.",
-        "Se recomienda a los conductores estar atentos a las indicaciones de las autoridades.",
-        "Se aconseja a los ciudadanos tomar medidas de precaución para proteger sus vehículos.",
-        "Se insta a la población a reportar cualquier actividad sospechosa."
-      ],
-      "estimated_impact_time": "No se espera un impacto directo en los tiempos de traslado. Sin embargo, la situación de inseguridad podría afectar indirectamente la fluidez del tráfico y la percepción de seguridad.",
-      "alternative_routes": "No se sugieren rutas alternativas específicas en este momento.  Se recomienda a los conductores informarse sobre las condiciones de tráfico en tiempo real."
+      "impact_on_vialities": "Si bien los incidentes reportados no han generado cierres viales directos, la situación de inseguridad generalizada puede afectar la percepción de seguridad y la fluidez del tráfico.",
+      "expert_commentary": "Expertos en seguridad sugieren a los ciudadanos extremar precauciones, especialmente en zonas con alta incidencia delictiva.",
+      "affected_routes": "No hay rutas directamente afectadas por cierres o bloqueos. Sin embargo, se recomienda precaución en Avenida Constituyentes (cerca de El Carrizal) y en la zona de Centro Sur, cerca de Bernardo Quintana.",
+      "alternative_routes": "No se sugieren rutas alternativas específicas. Se recomienda a los conductores mantenerse informados sobre la situación y tomar precauciones adicionales.",
+      "estimated_impact_time": "No se espera un impacto significativo en los tiempos de traslado, pero se recomienda a los conductores considerar un margen de tiempo adicional y estar atentos a las actualizaciones de las autoridades."
     }
   }
 }
