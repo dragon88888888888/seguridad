@@ -1,0 +1,18 @@
+[
+  {
+    "id": "322f410f",
+    "timestamp": "2025-03-29T05:17:14.950701",
+    "description": "no se vee naada",
+    "tipo": "bloqueo_vial",
+    "coordenadas": {
+      "lat": 20.6995456,
+      "lng": -100.4470272
+    },
+    "lugar": "",
+    "source": "citizen",
+    "verified": false,
+    "name": "Anónimo",
+    "contact": "",
+    "severity": "baja"
+  }
+]

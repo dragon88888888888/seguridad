@@ -1,0 +1,9 @@
+{
+    "dependencies": [
+        "."
+    ],
+    "graphs": {
+        "guard": "./gguard.py:graph"
+        
+    }
+}

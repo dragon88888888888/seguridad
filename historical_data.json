@@ -1,0 +1,798 @@
+[
+  {
+    "timestamp": "2025-03-29T05:45:31.346095",
+    "incidents": [
+      {
+        "titulo": "En 24 horas, Policía Estatal detiene a 127 personas | Querétaro",
+        "url": "https://www.eluniversalqueretaro.mx/seguridad/en-24-horas-policia-estatal-detiene-a-127-personas/",
+        "lugar": "municipio de Corregidora",
+        "fecha": null,
+        "hora": null,
+        "tipo": "intento de venta de vehículo robado",
+        "gravedad": "media",
+        "resumen": "En el municipio de Corregidora, un ciudadano solicitó apoyo policial para verificar el estatus legal de un vehículo que iba a comprar. Tras consultar el número de serie, se descubrió que el vehículo tenía reporte de robo en Toluca, Estado de México, y el vendedor fue detenido.",
+        "impacto_vial": "ninguna",
+        "coordenadas": {
+          "lat": 20.6022977,
+          "lng": -100.393737
+        }
+      },
+      {
+        "titulo": "Noticias de Querétaro - Quadratin",
+        "url": "https://queretaro.quadratin.com.mx/",
+        "lugar": null,
+        "fecha": null,
+        "hora": null,
+        "tipo": "muerte",
+        "gravedad": "alta",
+        "resumen": "Un menor de edad perdió la vida a pesar de los esfuerzos del personal de emergencia.",
+        "impacto_vial": "ninguna",
+        "coordenadas": null
+      },
+      {
+        "titulo": "Últimas Noticias y Eventos de Inseguridad en Querétaro - N+",
+        "url": "https://www.nmas.com.mx/temas/inseguridad-queretaro/",
+        "lugar": null,
+        "fecha": null,
+        "hora": null,
+        "tipo": "ataque armado",
+        "gravedad": "alta",
+        "resumen": "Un ataque armado en Querétaro resultó en la muerte de tres personas y dejó a una persona herida.",
+        "impacto_vial": "ninguna",
+        "coordenadas": null
+      },
+      {
+        "titulo": "Refuerza Kuri seguridad en la Sierra Gorda con más patrullas",
+        "url": "https://oem.com.mx/diariodequeretaro/local/refuerza-kuri-seguridad-en-la-sierra-gorda-con-mas-patrullas-22359443",
+        "lugar": "VARTEGA PLASTICS",
+        "fecha": null,
+        "hora": null,
+        "tipo": "Clausura por incumplimiento en materia ambiental",
+        "gravedad": null,
+        "resumen": "La empresa VARTEGA PLASTICS fue clausurada por autoridades municipales debido al incumplimiento en materia ambiental.",
+        "impacto_vial": "ninguna",
+        "coordenadas": {
+          "lat": 20.58806,
+          "lng": -100.38806
+        }
+      },
+      {
+        "titulo": "Hay un detenido en relación con la balacera en Querétaro - YouTube",
+        "url": "https://www.youtube.com/watch?v=pha0PHqjdE8",
+        "lugar": "bar Cantaritos",
+        "fecha": null,
+        "hora": null,
+        "tipo": "balacera",
+        "gravedad": "alta",
+        "resumen": "Un incidente en el bar Cantaritos resultó en 10 personas muertas y 13 heridas.",
+        "impacto_vial": "ninguna",
+        "coordenadas": {
+          "lat": 20.58806,
+          "lng": -100.38806
+        }
+      }
+    ],
+    "main_incident": {
+      "id": 0,
+      "noticia": "En 24 horas, Policía Estatal detiene a 127 personas | Querétaro",
+      "url": "https://www.eluniversalqueretaro.mx/seguridad/en-24-horas-policia-estatal-detiene-a-127-personas/",
+      "fecha_publicacion": "Fecha no encontrada",
+      "lugar": "municipio de Corregidora",
+      "fecha_incidente": null,
+      "hora_incidente": null,
+      "tipo_incidente": "intento de venta de vehículo robado",
+      "gravedad": "media",
+      "resumen": "En el municipio de Corregidora, un ciudadano solicitó apoyo policial para verificar el estatus legal de un vehículo que iba a comprar. Tras consultar el número de serie, se descubrió que el vehículo tenía reporte de robo en Toluca, Estado de México, y el vendedor fue detenido.",
+      "impacto_vial": "ninguna"
+    },
+    "analysis": {
+      "pattern": "Dado que la información no incluye fecha ni hora, no es posible identificar patrones temporales. Espacialmente, el incidente se concentra en el municipio de Corregidora, Querétaro, con implicaciones en la conexión con Toluca, Estado de México, debido al origen del vehículo robado. Podría indicar una posible ruta de traslado de vehículos robados entre ambas localidades.",
+      "impact": "bajo",
+      "risk_factors": [
+        "Falta de verificación adecuada del estatus legal del vehículo por parte del comprador.",
+        "Existencia de redes de robo y comercialización de vehículos robados.",
+        "Posible falta de control o coordinación entre autoridades de diferentes estados (Querétaro y Estado de México) en la detección y prevención del robo de vehículos.",
+        "Facilidad para alterar o falsificar documentos vehiculares."
+      ],
+      "affected_routes": "Aunque el incidente en sí no generó un impacto directo en las rutas, el robo del vehículo y su posible traslado podrían haber afectado indirectamente las rutas entre Toluca, Estado de México y Corregidora, Querétaro.  La ruta específica dependería del trayecto que el ladrón pretendía realizar.",
+      "estimated_duration": "El incidente en sí no tuvo un impacto en la duración del tráfico. La detención del vendedor y la recuperación del vehículo no generaron congestión.  La duración del impacto en las vialidades, en caso de haber existido, habría sido mínima (minutos) durante la intervención policial."
+    },
+    "recommendations": [
+      {
+        "recomendacion": "Si te encuentras en la zona de El Pueblito, Corregidora, y observas actividad sospechosa, como vehículos merodeando o personas actuando de manera inusual, reporta inmediatamente al 911. Presta atención a las calles aledañas como Paseo de la Constitución y Avenida de la Pirámide."
+      },
+      {
+        "recomendacion": "Al circular por la Carretera México-Querétaro, especialmente cerca de la colonia El Campanario, mantén una distancia segura del vehículo de adelante y evita detenerte en zonas poco iluminadas o solitarias. Revisa constantemente tus espejos retrovisores."
+      },
+      {
+        "recomendacion": "Si tu vehículo fue robado, y sospechas que el ladrón podría estar intentando salir de Querétaro, informa a las autoridades y considera alertar a los puntos de control en avenidas clave como Bernardo Quintana o 5 de Febrero, así como en los accesos a la colonia Jurica."
+      },
+      {
+        "recomendacion": "Evita dejar objetos de valor a la vista dentro de tu vehículo, especialmente si te estacionas en calles como Avenida Sombrerete o en colonias como Jardines de la Hacienda. Considera usar un dispositivo de rastreo GPS en tu vehículo."
+      },
+      {
+        "recomendacion": "Si vives en la zona de Balvanera o cerca de la Avenida Constituyentes, y notas un aumento en la actividad delictiva, organiza reuniones vecinales para fortalecer la seguridad comunitaria y considera la instalación de cámaras de seguridad en tu propiedad."
+      }
+    ],
+    "reports": {
+      "authorities": {
+        "report_title": "Informe Técnico de Seguridad Vial - Querétaro",
+        "incident_summary": "Se reporta un incidente de intento de venta de vehículo robado en el municipio de Corregidora, específicamente en la zona de El Pueblito.  Se identificó un vehículo con reporte de robo en Toluca, Estado de México. Adicionalmente, se registraron incidentes de alta gravedad, incluyendo una muerte y un ataque armado en Querétaro, aunque sin impacto vial directo reportado.",
+        "affected_routes": "El incidente principal se localiza en el municipio de Corregidora, con posible afectación en vialidades cercanas a El Pueblito, incluyendo Paseo de la Constitución y Avenida de la Pirámide.  La Carretera México-Querétaro, especialmente cerca de la colonia El Campanario, también presenta un riesgo potencial.",
+        "impact_analysis": "El análisis de impacto es bajo, con una predicción de impacto moderado.  La detención del vendedor del vehículo robado no generó impacto vial directo.  Sin embargo, la presencia de actividades delictivas, como el intento de venta de un vehículo robado, puede indicar un aumento en la inseguridad en la zona y potencialmente afectar la fluidez del tráfico debido a la presencia policial o la implementación de medidas de seguridad.",
+        "recommendations": "Implementar patrullaje preventivo en las zonas identificadas, especialmente en horarios de mayor riesgo.  Intensificar la vigilancia en los puntos de acceso y salida del municipio de Corregidora.  Colaborar con las autoridades de Toluca para investigar la procedencia del vehículo robado y desmantelar posibles redes de robo de vehículos.  Monitorear de cerca la Carretera México-Querétaro y coordinar con la policía estatal para implementar medidas de seguridad.",
+        "estimated_time_of_impact": "El impacto vial directo es mínimo.  Sin embargo, se recomienda mantener el monitoreo de la zona y estar preparados para posibles interrupciones de tráfico debido a investigaciones o acciones policiales.  El tiempo estimado de afectación es variable, dependiendo de la evolución de las investigaciones y las medidas de seguridad implementadas."
+      },
+      "citizens": {
+        "report_title": "Alerta de Seguridad Vial - Querétaro",
+        "incident_summary": "Se reporta un incidente de intento de venta de un vehículo robado en el municipio de Corregidora, en la zona de El Pueblito.  Se recomienda precaución y estar alerta ante posibles actividades sospechosas.",
+        "affected_routes": "Presta especial atención si transitas por El Pueblito, Corregidora, y en las vialidades cercanas como Paseo de la Constitución y Avenida de la Pirámide.  Al circular por la Carretera México-Querétaro, especialmente cerca de la colonia El Campanario, mantén la precaución.",
+        "recommendations": "Si te encuentras en la zona de El Pueblito, Corregidora, y observas actividad sospechosa, como vehículos merodeando o personas actuando de manera inusual, reporta inmediatamente al 911.  Mantén una distancia segura del vehículo de adelante y evita detenerte en zonas poco iluminadas o solitarias en la Carretera México-Querétaro.  Revisa constantemente tus espejos retrovisores.",
+        "alternative_routes": "Si es posible, evita las zonas mencionadas y considera rutas alternativas.  Si es necesario transitar por las áreas de riesgo, mantén una actitud vigilante y reporta cualquier incidente sospechoso a las autoridades.",
+        "estimated_time_of_impact": "No se espera un impacto vial directo significativo.  Sin embargo, se recomienda estar alerta y preparado para posibles demoras debido a la presencia policial o a la necesidad de tomar precauciones adicionales.  El tiempo estimado de afectación es variable, dependiendo de la situación."
+      },
+      "media": {
+        "report_title": "Intento de Venta de Vehículo Robado en Querétaro: Alerta de Seguridad Vial",
+        "incident_summary": "La Policía Estatal detuvo a una persona en el municipio de Corregidora por intento de venta de un vehículo robado.  El incidente ocurrió en la zona de El Pueblito.  Aunque el incidente no generó un impacto vial directo, las autoridades recomiendan precaución en la zona.",
+        "affected_routes": "El incidente se localiza en el municipio de Corregidora, con posible afectación en vialidades cercanas a El Pueblito, incluyendo Paseo de la Constitución y Avenida de la Pirámide.  La Carretera México-Querétaro, especialmente cerca de la colonia El Campanario, también requiere precaución.",
+        "impact_on_traffic": "El incidente no ha generado un impacto vial directo.  Sin embargo, la presencia policial y las medidas de seguridad implementadas podrían causar demoras en el tráfico.  Se recomienda a los conductores estar atentos a las indicaciones de las autoridades.",
+        "recommendations": "Las autoridades recomiendan a los conductores que transitan por la zona de El Pueblito y la Carretera México-Querétaro que mantengan la precaución y reporten cualquier actividad sospechosa al 911.",
+        "estimated_time_of_impact": "No se espera un impacto vial prolongado.  Sin embargo, podrían presentarse demoras menores debido a la presencia policial y a las investigaciones en curso.  Se recomienda a los conductores estar atentos a las actualizaciones de las autoridades."
+      }
+    }
+  },
+  {
+    "timestamp": "2025-03-29T05:38:58.764397",
+    "incidents": [
+      {
+        "titulo": "En 24 horas, Policía Estatal detiene a 127 personas | Querétaro",
+        "url": "https://www.eluniversalqueretaro.mx/seguridad/en-24-horas-policia-estatal-detiene-a-127-personas/",
+        "lugar": "Corregidora",
+        "fecha": null,
+        "hora": null,
+        "tipo": "Intento de venta de vehículo robado",
+        "gravedad": "media",
+        "resumen": "En el municipio de Corregidora, un ciudadano solicitó apoyo policial para verificar el estatus legal de un vehículo que iba a comprar. Tras la consulta, se descubrió que el vehículo tenía reporte de robo en Toluca, Estado de México, y el vendedor fue detenido.",
+        "impacto_vial": "ninguna",
+        "coordenadas": {
+          "lat": 20.4778128,
+          "lng": -100.4412472
+        }
+      },
+      {
+        "titulo": "Noticias de Querétaro - Quadratin",
+        "url": "https://queretaro.quadratin.com.mx/",
+        "lugar": null,
+        "fecha": null,
+        "hora": null,
+        "tipo": "muerte",
+        "gravedad": "alta",
+        "resumen": "Un menor perdió la vida a pesar de los esfuerzos del personal de emergencia.",
+        "impacto_vial": "ninguna",
+        "coordenadas": null
+      },
+      {
+        "titulo": "Últimas Noticias y Eventos de Inseguridad en Querétaro - N+",
+        "url": "https://www.nmas.com.mx/temas/inseguridad-queretaro/",
+        "lugar": null,
+        "fecha": null,
+        "hora": null,
+        "tipo": "ataque armado",
+        "gravedad": "alta",
+        "resumen": "Un ataque armado en Querétaro resultó en la muerte de tres personas y dejó a una persona herida.",
+        "impacto_vial": "ninguna",
+        "coordenadas": null
+      },
+      {
+        "titulo": "Refuerza Kuri seguridad en la Sierra Gorda con más patrullas",
+        "url": "https://oem.com.mx/diariodequeretaro/local/refuerza-kuri-seguridad-en-la-sierra-gorda-con-mas-patrullas-22359443",
+        "lugar": "VARTEGA PLASTICS",
+        "fecha": null,
+        "hora": null,
+        "tipo": "Clausura por incumplimiento en materia ambiental",
+        "gravedad": null,
+        "resumen": "La empresa VARTEGA PLASTICS fue clausurada por autoridades municipales debido al incumplimiento en materia ambiental.",
+        "impacto_vial": "ninguna",
+        "coordenadas": {
+          "lat": 20.58806,
+          "lng": -100.38806
+        }
+      },
+      {
+        "titulo": "Hay un detenido en relación con la balacera en Querétaro - YouTube",
+        "url": "https://www.youtube.com/watch?v=pha0PHqjdE8",
+        "lugar": "bar Cantaritos",
+        "fecha": null,
+        "hora": null,
+        "tipo": "balacera",
+        "gravedad": "alta",
+        "resumen": "Un incidente en el bar Cantaritos resultó en 10 personas muertas y 13 heridas.",
+        "impacto_vial": "ninguna",
+        "coordenadas": {
+          "lat": 20.58806,
+          "lng": -100.38806
+        }
+      }
+    ],
+    "main_incident": {
+      "id": 0,
+      "noticia": "En 24 horas, Policía Estatal detiene a 127 personas | Querétaro",
+      "url": "https://www.eluniversalqueretaro.mx/seguridad/en-24-horas-policia-estatal-detiene-a-127-personas/",
+      "fecha_publicacion": "Fecha no encontrada",
+      "lugar": "Corregidora",
+      "fecha_incidente": null,
+      "hora_incidente": null,
+      "tipo_incidente": "Intento de venta de vehículo robado",
+      "gravedad": "media",
+      "resumen": "En el municipio de Corregidora, un ciudadano solicitó apoyo policial para verificar el estatus legal de un vehículo que iba a comprar. Tras la consulta, se descubrió que el vehículo tenía reporte de robo en Toluca, Estado de México, y el vendedor fue detenido.",
+      "impacto_vial": "ninguna"
+    },
+    "analysis": {
+      "pattern": {
+        "temporal": "Imposible determinar patrones temporales sin información de fecha y hora. Sin embargo, el incidente sugiere una posible actividad delictiva relacionada con la venta de vehículos robados, que podría ser más frecuente en ciertos momentos del día o de la semana.",
+        "spatial": "El incidente ocurrió en Corregidora, Querétaro, pero el vehículo robado provenía de Toluca, Estado de México. Esto sugiere una posible red de robo y venta de vehículos que opera entre diferentes estados. La ubicación específica en Corregidora podría indicar un lugar de encuentro para la transacción."
+      },
+      "impact": "bajo",
+      "risk_factors": [
+        "Falta de verificación adecuada del estatus legal del vehículo por parte del comprador.",
+        "Existencia de una red de robo y venta de vehículos robados.",
+        "Posible falta de control o vigilancia en la zona donde se intentó realizar la venta.",
+        "Facilidad para trasladar vehículos robados entre estados."
+      ],
+      "affected_routes": "Ninguna directamente afectada por el incidente en sí. Sin embargo, la actividad delictiva subyacente (robo de vehículos y su traslado) podría afectar indirectamente rutas entre Toluca y Corregidora, así como las vías dentro de Corregidora donde se realizan las transacciones.",
+      "estimated_duration": "El incidente en sí no tuvo impacto en la duración del tránsito. La detención del vendedor y la recuperación del vehículo no generaron interrupciones viales. Sin embargo, la actividad delictiva subyacente puede generar demoras en el tránsito debido a la presencia de vehículos robados o a operativos policiales relacionados."
+    },
+    "recommendations": [
+      {
+        "recomendacion": "Evite estacionar su vehículo en la vía pública, especialmente durante la noche, en colonias como El Pueblito, Centro Histórico y Villas del Sol. Prefiera estacionamientos vigilados o dentro de su domicilio.",
+        "justificacion": "Estas colonias son conocidas por una mayor incidencia de robos de vehículos."
+      },
+      {
+        "recomendacion": "Si se encuentra en la Avenida Constituyentes, especialmente cerca de la Glorieta de la Bandera o en el tramo hacia la Colonia Carretas, mantenga las ventanillas cerradas y las puertas con seguro. Esté atento a personas sospechosas o vehículos desconocidos que se acerquen.",
+        "justificacion": "Esta avenida es un punto de tránsito importante y, por lo tanto, un lugar potencial para la comisión de delitos."
+      },
+      {
+        "recomendacion": "Al circular por la Carretera México-Querétaro, cerca de la salida a la Avenida 5 de Febrero o en dirección a la Colonia Jurica, mantenga una distancia prudente del vehículo de adelante y esté atento a cualquier intento de cerrarle el paso o de obligarlo a detenerse.",
+        "justificacion": "Esta carretera es una vía de escape potencial para los delincuentes."
+      },
+      {
+        "recomendacion": "Si observa un vehículo sospechoso, especialmente si se encuentra en la Calle Ezequiel Montes, cerca del Jardín Zenea, o en la Avenida Universidad, anote la placa y reporte la situación al 911. Describa el vehículo y la ubicación exacta.",
+        "justificacion": "La rápida denuncia puede ayudar a la policía a interceptar a los delincuentes."
+      },
+      {
+        "recomendacion": "Evite detenerse en zonas poco iluminadas o solitarias, como las calles aledañas al Parque Industrial Querétaro o en la zona de la Colonia Cimatario, especialmente después del anochecer. Si necesita detenerse, hágalo en un lugar visible y concurrido.",
+        "justificacion": "Estas áreas pueden ser más propensas a la actividad delictiva."
+      }
+    ],
+    "reports": {
+      "authorities": {
+        "report_title": "Informe de Seguridad Vial - Querétaro",
+        "date": "Fecha de generación del reporte (automática)",
+        "incident_summary": "Se reporta un incidente de intento de venta de vehículo robado en Corregidora. Además, se han registrado incidentes recientes de muerte y ataque armado en Querétaro.",
+        "affected_routes": "El incidente principal ocurrió en Corregidora. Los incidentes recientes no especifican rutas afectadas directamente, pero la presencia de incidentes de alta gravedad en la ciudad sugiere una posible afectación generalizada.",
+        "impact_assessment": "El impacto vial directo del incidente principal es 'ninguno'. Sin embargo, la alta incidencia de robos de vehículos y otros incidentes violentos en la ciudad, como los reportados, pueden generar indirectamente congestión y retrasos debido a operativos policiales, investigaciones y el aumento de la precaución por parte de los conductores.",
+        "estimated_impact_duration": "El impacto directo del incidente principal es mínimo. El impacto indirecto, relacionado con la inseguridad general, es continuo y variable.",
+        "recommendations": [
+          {
+            "action": "Intensificar la vigilancia policial en las colonias y avenidas identificadas como de alto riesgo (El Pueblito, Centro Histórico, Villas del Sol, Avenida Constituyentes).",
+            "justification": "Disuadir la actividad delictiva y aumentar la seguridad vial."
+          },
+          {
+            "action": "Implementar operativos de verificación de vehículos en puntos estratégicos.",
+            "justification": "Prevenir el robo de vehículos y la venta de vehículos robados."
+          },
+          {
+            "action": "Analizar patrones de delitos para identificar zonas de riesgo y optimizar los recursos de seguridad.",
+            "justification": "Mejorar la eficiencia de las operaciones de seguridad."
+          }
+        ],
+        "alternative_routes": "No se requieren rutas alternativas específicas para el incidente principal. Sin embargo, se recomienda a los conductores estar atentos a las indicaciones de las autoridades y evitar zonas de alta incidencia delictiva."
+      },
+      "citizens": {
+        "report_title": "Alerta de Seguridad Vial - Querétaro",
+        "date": "Fecha de generación del reporte (automática)",
+        "incident_summary": "Se reporta un intento de venta de vehículo robado en Corregidora. Se recomienda precaución debido a la alta incidencia de robos de vehículos y otros incidentes violentos en la ciudad.",
+        "affected_routes": "El incidente principal ocurrió en Corregidora. Se recomienda precaución general en todas las vialidades de Querétaro.",
+        "impact_assessment": "El impacto vial directo del incidente principal es 'ninguno'. Sin embargo, la inseguridad general puede generar retrasos y congestión.",
+        "estimated_impact_duration": "El impacto directo del incidente es mínimo. El impacto indirecto es continuo.",
+        "recommendations": [
+          {
+            "action": "Evite estacionar su vehículo en la vía pública, especialmente durante la noche, en colonias como El Pueblito, Centro Histórico y Villas del Sol. Prefiera estacionamientos vigilados o dentro de su domicilio.",
+            "justification": "Estas colonias son conocidas por una mayor incidencia de robos de vehículos."
+          },
+          {
+            "action": "Si se encuentra en la Avenida Constituyentes, especialmente cerca de la Glorieta de la Bandera o en el tramo hacia la Colonia Carretas, mantenga las ventanillas cerradas y las puertas con seguro. Esté atento a personas sospechosas o vehículos desconocidos que se acerquen.",
+            "justification": "Esta avenida es un punto de tránsito importante y, por lo tanto, un lugar potencial para la comisión de delitos."
+          },
+          {
+            "action": "Manténgase informado sobre la situación de seguridad en la ciudad a través de fuentes confiables.",
+            "justification": "Permite tomar decisiones informadas sobre sus desplazamientos."
+          }
+        ],
+        "alternative_routes": "No se requieren rutas alternativas específicas. Sin embargo, considere rutas alternativas si percibe situaciones de riesgo."
+      },
+      "media": {
+        "report_title": "Aumento de la Inseguridad en Querétaro: Robo de Vehículos y Otros Incidentes",
+        "date": "Fecha de publicación (automática)",
+        "incident_summary": "Las autoridades detuvieron a una persona por intento de venta de un vehículo robado en Corregidora. Además, se reportan incidentes de muerte y ataque armado en la ciudad, lo que eleva la preocupación por la seguridad vial.",
+        "affected_routes": "El incidente de robo de vehículo ocurrió en Corregidora. Aunque no se especifican rutas afectadas directamente por los otros incidentes, la situación de inseguridad generalizada puede generar retrasos y congestión en las principales vialidades de Querétaro.",
+        "impact_assessment": "El impacto vial directo del incidente principal es 'ninguna'. Sin embargo, la inseguridad generalizada puede afectar el flujo vehicular debido a operativos policiales y la precaución de los conductores.",
+        "estimated_impact_duration": "El impacto directo del incidente es mínimo. El impacto indirecto, relacionado con la inseguridad, es continuo y variable.",
+        "recommendations": [
+          {
+            "action": "Las autoridades recomiendan a los ciudadanos tomar precauciones y estar atentos a su entorno.",
+            "justification": "Minimizar el riesgo de ser víctimas de delitos."
+          },
+          {
+            "action": "Se sugiere a los conductores evitar estacionar sus vehículos en la vía pública en zonas de riesgo.",
+            "justification": "Reducir la probabilidad de robo de vehículos."
+          }
+        ],
+        "alternative_routes": "No se requieren rutas alternativas específicas. Se recomienda a los conductores estar atentos a las indicaciones de las autoridades y considerar rutas alternativas si perciben situaciones de riesgo."
+      }
+    }
+  },
+  {
+    "timestamp": "2025-03-29T05:33:13.446265",
+    "incidents": [
+      {
+        "titulo": "En 24 horas, Policía Estatal detiene a 127 personas | Querétaro",
+        "url": "https://www.eluniversalqueretaro.mx/seguridad/en-24-horas-policia-estatal-detiene-a-127-personas/",
+        "lugar": "Corregidora",
+        "fecha": null,
+        "hora": null,
+        "tipo": "Intento de venta de vehículo robado",
+        "gravedad": "media",
+        "resumen": "En el municipio de Corregidora, un ciudadano solicitó apoyo policial para verificar el estatus legal de un vehículo que iba a comprar. Tras revisar el número de serie, se descubrió que el vehículo tenía reporte de robo en Toluca, Estado de México, y el vendedor fue detenido.",
+        "impacto_vial": "ninguna",
+        "coordenadas": {
+          "lat": 20.4778128,
+          "lng": -100.4412472
+        }
+      },
+      {
+        "titulo": "Noticias de Querétaro - Quadratin",
+        "url": "https://queretaro.quadratin.com.mx/",
+        "lugar": null,
+        "fecha": null,
+        "hora": null,
+        "tipo": "fallecimiento",
+        "gravedad": "alta",
+        "resumen": "Un menor de edad perdió la vida a pesar de los esfuerzos del personal de emergencia.",
+        "impacto_vial": "ninguna",
+        "coordenadas": null
+      },
+      {
+        "titulo": "Últimas Noticias y Eventos de Inseguridad en Querétaro - N+",
+        "url": "https://www.nmas.com.mx/temas/inseguridad-queretaro/",
+        "lugar": null,
+        "fecha": null,
+        "hora": null,
+        "tipo": "ataque armado",
+        "gravedad": "alta",
+        "resumen": "Un ataque armado en Querétaro resultó en la muerte de tres personas y dejó a una persona herida.",
+        "impacto_vial": "ninguna",
+        "coordenadas": null
+      },
+      {
+        "titulo": "Refuerza Kuri seguridad en la Sierra Gorda con más patrullas",
+        "url": "https://oem.com.mx/diariodequeretaro/local/refuerza-kuri-seguridad-en-la-sierra-gorda-con-mas-patrullas-22359443",
+        "lugar": "VARTEGA PLASTICS",
+        "fecha": null,
+        "hora": null,
+        "tipo": "Clausura por incumplimiento en materia ambiental",
+        "gravedad": null,
+        "resumen": "La empresa VARTEGA PLASTICS fue clausurada por autoridades municipales debido al incumplimiento en materia ambiental.",
+        "impacto_vial": "ninguna",
+        "coordenadas": {
+          "lat": 20.58806,
+          "lng": -100.38806
+        }
+      },
+      {
+        "titulo": "Hay un detenido en relación con la balacera en Querétaro - YouTube",
+        "url": "https://www.youtube.com/watch?v=pha0PHqjdE8",
+        "lugar": "bar Cantaritos",
+        "fecha": null,
+        "hora": null,
+        "tipo": "balacera",
+        "gravedad": "alta",
+        "resumen": "Un incidente en el bar Cantaritos resultó en 10 personas muertas y 13 heridas.",
+        "impacto_vial": "ninguna",
+        "coordenadas": {
+          "lat": 20.58806,
+          "lng": -100.38806
+        }
+      }
+    ],
+    "main_incident": {
+      "id": 2,
+      "noticia": "Últimas Noticias y Eventos de Inseguridad en Querétaro - N+",
+      "url": "https://www.nmas.com.mx/temas/inseguridad-queretaro/",
+      "fecha_publicacion": "Fecha no encontrada",
+      "lugar": null,
+      "fecha_incidente": null,
+      "hora_incidente": null,
+      "tipo_incidente": "ataque armado",
+      "gravedad": "alta",
+      "resumen": "Un ataque armado en Querétaro resultó en la muerte de tres personas y dejó a una persona herida.",
+      "impacto_vial": "ninguna"
+    },
+    "analysis": {
+      "pattern": "Dado que el incidente ocurrió en Querétaro, se podría inferir un patrón espacial de riesgo en zonas urbanas o áreas con alta concentración de personas. Temporalmente, este tipo de incidentes pueden ser más frecuentes en horarios de menor vigilancia o durante eventos sociales/económicos específicos. Sin embargo, sin más datos, es difícil establecer un patrón temporal claro.",
+      "impact": "bajo",
+      "risk_factors": [
+        "Presencia de grupos armados.",
+        "Posiblemente, conflictos entre grupos criminales.",
+        "Falta de vigilancia o seguridad en el área.",
+        "Acceso a armas de fuego."
+      ],
+      "affected_routes": "Ninguna. El resumen indica que no hubo impacto vial directo.",
+      "estimated_duration": "Ninguna. El resumen indica que no hubo impacto vial directo."
+    },
+    "recommendations": [
+      {
+        "recomendacion": "Al transitar por la Avenida Constituyentes, especialmente cerca de la Colonia El Carrizal, mantén una velocidad moderada y presta atención a posibles peatones o ciclistas que puedan cruzar la calle, aunque el incidente haya sido de bajo riesgo, la precaución siempre es clave."
+      },
+      {
+        "recomendacion": "Si te encuentras en la zona de la Colonia Lomas de Querétaro y planeas incorporarte a la Avenida Bernardo Quintana, verifica tus espejos y señaliza con anticipación tus movimientos para evitar cualquier situación de riesgo, aunque no haya impacto vial directo, la prevención es fundamental."
+      },
+      {
+        "recomendacion": "Si te desplazas por la Calle Ezequiel Montes, cerca del Centro Histórico, y te diriges hacia la Avenida Universidad, mantén la calma y respeta los señalamientos viales, ya que el incidente, aunque de bajo riesgo, podría generar un ligero aumento en el flujo vehicular en las inmediaciones."
+      },
+      {
+        "recomendacion": "Al conducir por la Avenida 5 de Febrero, en dirección a la Colonia La Purísima, mantén una distancia prudente con los demás vehículos y evita distracciones, como el uso del teléfono celular, para reaccionar a tiempo ante cualquier imprevisto, aunque el incidente no haya afectado directamente el tráfico."
+      },
+      {
+        "recomendacion": "Si te encuentras en la zona de Juriquilla y planeas tomar la Carretera México-Querétaro, revisa las condiciones del tráfico en tiempo real a través de aplicaciones o medios de comunicación, para anticipar cualquier posible retraso, aunque el incidente sea de bajo riesgo, la información es poder."
+      }
+    ],
+    "reports": {
+      "authorities": {
+        "report_type": "Informe Técnico para Autoridades de Tránsito y Seguridad",
+        "summary": "El informe detalla incidentes recientes de seguridad vial en Querétaro, con énfasis en un ataque armado de alta gravedad que resultó en múltiples fatalidades. Se incluye un análisis de riesgo y recomendaciones preventivas para optimizar la seguridad vial.",
+        "affected_routes": "Si bien los incidentes reportados no generaron impacto vial directo, la presencia de ataques armados y otros incidentes de seguridad en áreas como Avenida Constituyentes (cercana a El Carrizal) y la zona de Lomas de Querétaro, cerca de Avenida Bernardo Quintana, requieren atención. El análisis sugiere un impacto bajo en las vialidades, pero la naturaleza de los incidentes exige una vigilancia constante.",
+        "recommendations": [
+          "Incrementar la presencia policial y los patrullajes en las áreas identificadas como de riesgo (Avenida Constituyentes, El Carrizal, Lomas de Querétaro, Avenida Bernardo Quintana).",
+          "Implementar medidas de vigilancia adicionales, como cámaras de seguridad y sistemas de monitoreo, en puntos estratégicos.",
+          "Realizar operativos de control de velocidad y revisión de vehículos en las zonas mencionadas.",
+          "Colaborar con otras autoridades para investigar los incidentes reportados y prevenir futuros actos delictivos.",
+          "Evaluar la posibilidad de implementar mejoras en la iluminación y señalización vial en las áreas de riesgo."
+        ],
+        "estimated_impact_time": "El impacto vial directo es mínimo, pero la percepción de inseguridad y la necesidad de vigilancia constante requieren una atención continua. Se recomienda una evaluación constante de la situación y la adaptación de las estrategias de seguridad según sea necesario."
+      },
+      "citizens": {
+        "report_type": "Información y Advertencias para Conductores y Transeúntes",
+        "summary": "Se informa sobre incidentes recientes de seguridad en Querétaro, incluyendo un ataque armado con consecuencias fatales. Se enfatiza la importancia de la precaución y se ofrecen recomendaciones para la seguridad personal en las vialidades.",
+        "affected_routes": "Aunque los incidentes no han generado cierres viales, se recomienda precaución en las siguientes áreas: Avenida Constituyentes, especialmente cerca de la Colonia El Carrizal, y en la zona de Lomas de Querétaro, cerca de la Avenida Bernardo Quintana.",
+        "recommendations": [
+          "Al transitar por Avenida Constituyentes, mantén una velocidad moderada y presta atención a peatones y ciclistas.",
+          "Si te incorporas a Avenida Bernardo Quintana desde Lomas de Querétaro, verifica tus espejos y señaliza tus movimientos.",
+          "Mantén una actitud vigilante y reporta cualquier actividad sospechosa a las autoridades.",
+          "Evita transitar por zonas poco iluminadas o peligrosas, especialmente durante la noche.",
+          "Considera rutas alternativas si es posible, especialmente en las áreas mencionadas, si te sientes inseguro."
+        ],
+        "estimated_impact_time": "No se espera un impacto directo en los tiempos de traslado. Sin embargo, la precaución y la vigilancia deben ser constantes. Se recomienda estar atento a las actualizaciones de las autoridades y a las noticias locales."
+      },
+      "media": {
+        "report_type": "Nota Informativa Destacando el Impacto en las Vialidades",
+        "summary": "Se reportan incidentes de seguridad en Querétaro, incluyendo un ataque armado con consecuencias fatales. Aunque el impacto vial directo es mínimo, se destaca la importancia de la precaución y se informa sobre las áreas de riesgo.",
+        "affected_routes": "Si bien no hay cierres viales reportados, se recomienda precaución en las siguientes zonas: Avenida Constituyentes, especialmente cerca de la Colonia El Carrizal, y en la zona de Lomas de Querétaro, cerca de la Avenida Bernardo Quintana. Se sugiere a los conductores estar atentos y considerar rutas alternativas si es necesario.",
+        "recommendations": [
+          "Se recomienda a los conductores y transeúntes estar alerta y tomar precauciones adicionales al transitar por las áreas mencionadas.",
+          "Las autoridades recomiendan mantener una velocidad moderada y estar atentos a su entorno.",
+          "Se sugiere a los conductores verificar sus espejos y señalizar sus movimientos al incorporarse a avenidas principales.",
+          "Se recomienda a los ciudadanos reportar cualquier actividad sospechosa a las autoridades competentes.",
+          "Se recomienda a los ciudadanos estar atentos a las actualizaciones de las autoridades y a las noticias locales."
+        ],
+        "estimated_impact_time": "No se espera un impacto significativo en los tiempos de traslado, pero se recomienda a los conductores estar preparados para posibles retrasos debido a operativos de seguridad o a la necesidad de tomar rutas alternativas. Se recomienda estar atento a las actualizaciones de las autoridades."
+      }
+    }
+  },
+  {
+    "timestamp": "2025-03-29T05:27:25.298050",
+    "incidents": [
+      {
+        "titulo": "En 24 horas, Policía Estatal detiene a 127 personas | Querétaro",
+        "url": "https://www.eluniversalqueretaro.mx/seguridad/en-24-horas-policia-estatal-detiene-a-127-personas/",
+        "lugar": "Corregidora",
+        "fecha": null,
+        "hora": null,
+        "tipo": "Recuperación de vehículo robado y detención",
+        "gravedad": "media",
+        "resumen": "En el municipio de Corregidora, un ciudadano solicitó apoyo policial para verificar el estatus legal de un vehículo que iba a comprar. Tras consultar el número de serie, se confirmó que el vehículo tenía reporte de robo en Toluca, Estado de México, por lo que el vendedor fue detenido.",
+        "impacto_vial": "ninguna",
+        "coordenadas": {
+          "lat": 20.4778128,
+          "lng": -100.4412472
+        }
+      },
+      {
+        "titulo": "Noticias de Querétaro - Quadratin",
+        "url": "https://queretaro.quadratin.com.mx/",
+        "lugar": null,
+        "fecha": null,
+        "hora": null,
+        "tipo": "fallecimiento",
+        "gravedad": "alta",
+        "resumen": "Un menor de edad perdió la vida a pesar de los esfuerzos del personal de emergencia.",
+        "impacto_vial": "ninguna",
+        "coordenadas": null
+      },
+      {
+        "titulo": "Últimas Noticias y Eventos de Inseguridad en Querétaro - N+",
+        "url": "https://www.nmas.com.mx/temas/inseguridad-queretaro/",
+        "lugar": null,
+        "fecha": null,
+        "hora": null,
+        "tipo": "ataque armado",
+        "gravedad": "alta",
+        "resumen": "Un ataque armado en Querétaro resultó en la muerte de tres personas y dejó a una persona herida.",
+        "impacto_vial": "ninguna",
+        "coordenadas": null
+      },
+      {
+        "titulo": "Hay un detenido en relación con la balacera en Querétaro - YouTube",
+        "url": "https://www.youtube.com/watch?v=pha0PHqjdE8",
+        "lugar": "bar Cantaritos",
+        "fecha": null,
+        "hora": null,
+        "tipo": "balacera",
+        "gravedad": "alta",
+        "resumen": "Un incidente en el bar Cantaritos resultó en 10 personas muertas y 13 heridas.",
+        "impacto_vial": "ninguna",
+        "coordenadas": {
+          "lat": 20.58806,
+          "lng": -100.38806
+        }
+      },
+      {
+        "titulo": "Supervisan alcaldes de la zona metropolitana operativo de seguridad",
+        "url": "https://oem.com.mx/diariodequeretaro/local/supervisan-alcaldes-de-la-zona-metropolitana-operativo-de-seguridad-22141673.app.json",
+        "lugar": "VARTEGA PLASTICS",
+        "fecha": null,
+        "hora": null,
+        "tipo": "Clausura",
+        "gravedad": null,
+        "resumen": "La empresa VARTEGA PLASTICS fue clausurada debido al incumplimiento en materia ambiental, según autoridades municipales.",
+        "impacto_vial": "ninguna",
+        "coordenadas": {
+          "lat": 20.58806,
+          "lng": -100.38806
+        }
+      }
+    ],
+    "main_incident": {
+      "id": 0,
+      "noticia": "En 24 horas, Policía Estatal detiene a 127 personas | Querétaro",
+      "url": "https://www.eluniversalqueretaro.mx/seguridad/en-24-horas-policia-estatal-detiene-a-127-personas/",
+      "fecha_publicacion": "Fecha no encontrada",
+      "lugar": "Corregidora",
+      "fecha_incidente": null,
+      "hora_incidente": null,
+      "tipo_incidente": "Recuperación de vehículo robado y detención",
+      "gravedad": "media",
+      "resumen": "En el municipio de Corregidora, un ciudadano solicitó apoyo policial para verificar el estatus legal de un vehículo que iba a comprar. Tras consultar el número de serie, se confirmó que el vehículo tenía reporte de robo en Toluca, Estado de México, por lo que el vendedor fue detenido.",
+      "impacto_vial": "ninguna"
+    },
+    "analysis": {
+      "pattern": "El incidente se localiza en el municipio de Corregidora, lo que sugiere un posible patrón espacial relacionado con la compraventa de vehículos robados en esa área. La ausencia de fecha y hora dificulta identificar patrones temporales. Sin embargo, la detección del vehículo robado durante una verificación legal indica que el robo original pudo haber ocurrido en Toluca, Estado de México, y el vehículo fue transportado a Corregidora para su venta.",
+      "impact": "bajo",
+      "risk_factors": [
+        "Falta de verificación exhaustiva del estatus legal del vehículo por parte del comprador.",
+        "Intento de venta de un vehículo robado.",
+        "Posible falta de controles efectivos en la transferencia de vehículos entre estados.",
+        "Existencia de mercados de vehículos robados."
+      ],
+      "affected_routes": "Ninguna ruta específica fue directamente afectada por este incidente, ya que la detención ocurrió durante una verificación legal. Sin embargo, la ruta de transporte del vehículo robado desde Toluca, Estado de México, hasta Corregidora pudo haber involucrado varias vías.",
+      "estimated_duration": "El impacto en vialidades fue nulo. La duración del incidente, en términos de afectación al tráfico, fue mínima, limitada al tiempo que tomó la verificación y la detención del vendedor."
+    },
+    "recommendations": [
+      {
+        "recomendacion": "Si viajas desde el Estado de México, verifica la integridad de tu vehículo y documentación antes de ingresar a Querétaro, especialmente si planeas circular por avenidas como Bernardo Quintana o 5 de Febrero. Mantente alerta a tu entorno.",
+        "justificacion": "La ruta de transporte del vehículo robado pudo haber involucrado estas avenidas principales."
+      },
+      {
+        "recomendacion": "Al estacionar tu vehículo en la colonia Centro Sur, asegúrate de hacerlo en lugares iluminados y transitados, preferiblemente cerca de la Avenida Constituyentes o la calle Ezequiel Montes. Evita dejar objetos de valor a la vista.",
+        "justificacion": "La ubicación del robo en Corregidora implica la proximidad a zonas urbanas con alta afluencia vehicular."
+      },
+      {
+        "recomendacion": "Si te detienen para una verificación legal en la zona de Jurica o Juriquilla, coopera con las autoridades y mantén la calma. Asegúrate de tener toda tu documentación en regla y a la vista.",
+        "justificacion": "La detención ocurrió durante una verificación legal, lo que sugiere la importancia de estar preparado para este tipo de situaciones en cualquier lugar de Querétaro."
+      },
+      {
+        "recomendacion": "Si detectas alguna actividad sospechosa o ves un vehículo que te parezca inusual en la colonia El Pueblito, cerca de la Avenida Revolución, reporta inmediatamente a las autoridades. Observa las placas y características del vehículo.",
+        "justificacion": "La ubicación del incidente en Corregidora implica la cercanía a colonias y avenidas importantes."
+      },
+      {
+        "recomendacion": "Antes de viajar a Querétaro, especialmente si vienes de otra entidad, revisa las condiciones de tu seguro vehicular y asegúrate de tener cobertura vigente. Considera estacionar tu vehículo en un lugar seguro y vigilado, como en la colonia Carretas o cerca del Boulevard de las Américas.",
+        "justificacion": "La naturaleza del incidente (robo de vehículo) resalta la importancia de la seguridad vehicular y la prevención."
+      }
+    ],
+    "reports": {
+      "authorities": {
+        "report_title": "Informe Técnico de Seguridad Vial - Querétaro",
+        "incident_summary": "Se reporta un incidente de recuperación de vehículo robado y detención en Corregidora. El incidente involucra la detención de un individuo relacionado con el robo de un vehículo con reporte en Toluca, Estado de México.",
+        "affected_routes": "Si bien el incidente no generó un impacto vial directo, la ruta del vehículo robado podría haber involucrado las avenidas principales como Bernardo Quintana y 5 de Febrero, así como la conexión con el Estado de México.",
+        "alternative_routes": "No se requieren rutas alternativas debido a la falta de impacto vial directo. Sin embargo, se recomienda monitorear el flujo vehicular en las avenidas mencionadas y en las entradas y salidas de la ciudad.",
+        "estimated_impact_time": "El impacto vial es mínimo, por lo que no se estima un tiempo de afectación significativo. Se recomienda monitorear la situación para posibles retrasos en caso de investigaciones posteriores.",
+        "recommendations": "Intensificar la vigilancia en las zonas de alta incidencia de robo de vehículos y en las principales vías de acceso y salida de la ciudad. Reforzar los operativos de verificación vehicular y la coordinación con autoridades del Estado de México.",
+        "additional_notes": "El análisis de datos sugiere un riesgo bajo de impacto vial directo. Sin embargo, la proximidad del incidente a zonas urbanas y vías principales justifica una vigilancia preventiva."
+      },
+      "citizens": {
+        "report_title": "Alerta de Seguridad Vial - Querétaro",
+        "incident_summary": "Se informa sobre la recuperación de un vehículo robado en Corregidora. Las autoridades detuvieron a una persona relacionada con el robo.",
+        "affected_routes": "Aunque el incidente no causó afectaciones directas, se recomienda precaución en las avenidas Bernardo Quintana y 5 de Febrero, así como en las vías de acceso desde el Estado de México.",
+        "alternative_routes": "No se requieren rutas alternativas inmediatas. Sin embargo, se sugiere considerar rutas alternas en caso de congestión vehicular en las avenidas mencionadas.",
+        "estimated_impact_time": "No se espera un impacto significativo en el tráfico. Manténgase atento a las actualizaciones de las autoridades.",
+        "recommendations": "Si viaja desde el Estado de México, verifique la integridad de su vehículo y documentación antes de ingresar a Querétaro. Estacione su vehículo en lugares iluminados y transitados, preferiblemente cerca de avenidas principales. Manténgase alerta a su entorno.",
+        "additional_notes": "La seguridad vial es responsabilidad de todos. Manténgase informado y tome precauciones."
+      },
+      "media": {
+        "report_title": "Nota Informativa - Recuperación de Vehículo Robado en Querétaro",
+        "incident_summary": "La Policía Estatal detuvo a una persona en Corregidora por el robo de un vehículo con reporte en Toluca, Estado de México. El incidente no generó afectaciones viales directas.",
+        "affected_routes": "Si bien el incidente no impactó directamente en el tráfico, se recomienda precaución en las avenidas Bernardo Quintana y 5 de Febrero, así como en las vías de acceso desde el Estado de México, ya que podrían haber sido utilizadas en la ruta del vehículo robado.",
+        "alternative_routes": "No se requieren rutas alternativas. Se recomienda a los conductores estar atentos a las actualizaciones de las autoridades y a posibles congestiones en las vías mencionadas.",
+        "estimated_impact_time": "No se espera un impacto significativo en el tráfico. Las autoridades monitorean la situación.",
+        "recommendations": "Los conductores deben estar atentos a su entorno y tomar precauciones adicionales al circular por las avenidas mencionadas. Se recomienda verificar el estado de su vehículo y documentación, especialmente si provienen del Estado de México.",
+        "additional_notes": "Este incidente resalta la importancia de la verificación vehicular y la colaboración entre autoridades para combatir el robo de vehículos. Manténgase informado a través de fuentes oficiales."
+      }
+    }
+  },
+  {
+    "timestamp": "2025-03-29T03:51:12.116506",
+    "incidents": [
+      {
+        "titulo": "En 24 horas, Policía Estatal detiene a 127 personas | Querétaro",
+        "url": "https://www.eluniversalqueretaro.mx/seguridad/en-24-horas-policia-estatal-detiene-a-127-personas/",
+        "lugar": "municipio de Corregidora",
+        "fecha": null,
+        "hora": null,
+        "tipo": "intento de venta de vehículo robado",
+        "gravedad": "media",
+        "resumen": "En el municipio de Corregidora, un ciudadano solicitó apoyo policial para verificar el estatus legal de un vehículo que pretendía adquirir. Tras la consulta, se confirmó que el vehículo tenía reporte de robo en Toluca, Estado de México, y el vendedor fue detenido.",
+        "impacto_vial": "ninguna",
+        "coordenadas": {
+          "lat": 20.6022977,
+          "lng": -100.393737
+        }
+      },
+      {
+        "titulo": "Noticias de Querétaro - Quadratin",
+        "url": "https://queretaro.quadratin.com.mx/",
+        "lugar": null,
+        "fecha": null,
+        "hora": null,
+        "tipo": "fallecimiento",
+        "gravedad": "alta",
+        "resumen": "Un menor de edad perdió la vida a pesar de los esfuerzos del personal de emergencia.",
+        "impacto_vial": "ninguna",
+        "coordenadas": null
+      },
+      {
+        "titulo": "Últimas Noticias y Eventos de Inseguridad en Querétaro - N+",
+        "url": "https://www.nmas.com.mx/temas/inseguridad-queretaro/",
+        "lugar": null,
+        "fecha": null,
+        "hora": null,
+        "tipo": "ataque armado",
+        "gravedad": "alta",
+        "resumen": "Un ataque armado en Querétaro resultó en la muerte de tres personas y dejó a una persona herida.",
+        "impacto_vial": "ninguna",
+        "coordenadas": null
+      },
+      {
+        "titulo": "Refuerza Kuri seguridad en la Sierra Gorda con más patrullas",
+        "url": "https://oem.com.mx/diariodequeretaro/local/refuerza-kuri-seguridad-en-la-sierra-gorda-con-mas-patrullas-22359443",
+        "lugar": "VARTEGA PLASTICS",
+        "fecha": null,
+        "hora": null,
+        "tipo": "Clausura por incumplimiento en materia ambiental",
+        "gravedad": null,
+        "resumen": "La empresa VARTEGA PLASTICS fue clausurada por autoridades municipales debido al incumplimiento en materia ambiental.",
+        "impacto_vial": "ninguna",
+        "coordenadas": {
+          "lat": 20.58806,
+          "lng": -100.38806
+        }
+      },
+      {
+        "titulo": "Hay un detenido en relación con la balacera en Querétaro - YouTube",
+        "url": "https://www.youtube.com/watch?v=pha0PHqjdE8",
+        "lugar": "bar Cantaritos",
+        "fecha": null,
+        "hora": null,
+        "tipo": "balacera",
+        "gravedad": "alta",
+        "resumen": "Un incidente en el bar Cantaritos resultó en 10 personas muertas y 13 heridas.",
+        "impacto_vial": "ninguna",
+        "coordenadas": {
+          "lat": 20.58806,
+          "lng": -100.38806
+        }
+      }
+    ],
+    "main_incident": {
+      "id": 2,
+      "noticia": "Últimas Noticias y Eventos de Inseguridad en Querétaro - N+",
+      "url": "https://www.nmas.com.mx/temas/inseguridad-queretaro/",
+      "fecha_publicacion": "Fecha no encontrada",
+      "lugar": null,
+      "fecha_incidente": null,
+      "hora_incidente": null,
+      "tipo_incidente": "ataque armado",
+      "gravedad": "alta",
+      "resumen": "Un ataque armado en Querétaro resultó en la muerte de tres personas y dejó a una persona herida.",
+      "impacto_vial": "ninguna"
+    },
+    "analysis": {
+      "pattern": "Dado que el incidente es un ataque armado, los patrones son difíciles de predecir sin más información. Sin embargo, este tipo de incidentes pueden mostrar patrones espaciales relacionados con la presencia de grupos criminales, conflictos territoriales o zonas de alta densidad poblacional. Los patrones temporales podrían estar relacionados con horarios de menor presencia policial o mayor actividad delictiva.",
+      "impact": "bajo",
+      "risk_factors": [
+        "Presencia de grupos criminales.",
+        "Posible conflicto territorial.",
+        "Acceso a armas de fuego.",
+        "Falta de presencia policial o seguridad en la zona."
+      ],
+      "affected_routes": "Ninguna, según la información proporcionada.",
+      "estimated_duration": "El impacto en vialidades es nulo según la información. Sin embargo, si el incidente ocurriera en una zona concurrida, podría haber cierres viales temporales para investigación, con una duración estimada de entre 1 y 4 horas, dependiendo de la complejidad de la investigación."
+    },
+    "recommendations": [
+      {
+        "recomendacion": "Si te encuentras cerca de la zona (Latitud 20.5505672, Longitud -100.3724234), que presumiblemente está en la colonia El Prado, reduce la velocidad al transitar por la Avenida Universidad, especialmente si te diriges hacia el norte, ya que es una zona con cruces peatonales y posibles obstáculos."
+      },
+      {
+        "recomendacion": "Si vienes desde la colonia Cimatario y te diriges hacia la zona del incidente, evita tomar la Avenida Constituyentes y mejor utiliza la Calle Ezequiel Montes para llegar a la Avenida Universidad, ya que esta última puede ser más fluida y menos congestionada, especialmente en horas pico."
+      },
+      {
+        "recomendacion": "Si te encuentras en la zona de la colonia Centro Histórico y planeas ir hacia la zona del incidente, considera tomar la Avenida Zaragoza y luego incorporarte a la Avenida Universidad. Presta atención a los semáforos y a los peatones al cruzar la Calle Madero."
+      },
+      {
+        "recomendacion": "Para los conductores que transitan por la Avenida Bernardo Quintana y se dirigen hacia el sur, cerca de la zona del incidente, mantengan una distancia segura con los vehículos que circulan frente a ustedes, especialmente al acercarse a los cruces con la Calle Hacienda El Salitre, en la colonia El Salitre."
+      },
+      {
+        "recomendacion": "Si te encuentras en la colonia Jardines de la Hacienda y te diriges hacia la zona del incidente, revisa las condiciones del tráfico en tiempo real antes de salir. Considera rutas alternativas como la Calle Felipe Ángeles, si la Avenida Universidad presenta congestión."
+      }
+    ],
+    "reports": {
+      "authorities": {
+        "report_title": "Informe Técnico de Seguridad Vial - Querétaro",
+        "date": "Fecha no encontrada (Basado en datos disponibles)",
+        "incident_summary": "Se reporta un incidente de alta gravedad: un ataque armado con tres fallecidos y un herido. Además, se han registrado otros incidentes, incluyendo detenciones por intento de venta de vehículo robado y un fallecimiento de un menor.",
+        "affected_areas": "El incidente principal no especifica una ubicación exacta. Sin embargo, el análisis sugiere un posible foco en la colonia El Prado, cerca de la Avenida Universidad. El incidente de intento de venta de vehículo robado ocurrió en el municipio de Corregidora.",
+        "impact_assessment": "El impacto vial general se considera bajo. Sin embargo, la presencia de incidentes de alta gravedad y las recomendaciones sugieren la necesidad de monitoreo y posibles ajustes en la gestión del tráfico en las áreas mencionadas.",
+        "recommendations": [
+          "Intensificar la presencia policial y los operativos de seguridad en la Avenida Universidad y sus alrededores, especialmente en la colonia El Prado.",
+          "Monitorear el flujo vehicular en la Avenida Universidad y la Avenida Constituyentes, implementando medidas de control de tráfico si es necesario.",
+          "Revisar y optimizar la señalización vial en las zonas de cruce peatonal en la Avenida Universidad.",
+          "Coordinar con las autoridades de Corregidora para investigar y prevenir el intento de venta de vehículos robados."
+        ],
+        "estimated_impact_time": "No se puede determinar un tiempo estimado de afectación específico debido a la falta de datos sobre la duración de los incidentes y la congestión del tráfico."
+      },
+      "citizens": {
+        "report_title": "Alerta de Seguridad Vial - Querétaro",
+        "date": "Fecha no encontrada (Basado en datos disponibles)",
+        "alert_summary": "Se recomienda precaución en Querétaro debido a incidentes recientes de inseguridad, incluyendo un ataque armado y otros eventos. Presta atención a las recomendaciones para evitar zonas de riesgo y posibles congestionamientos.",
+        "affected_routes": "Se recomienda precaución en la Avenida Universidad, especialmente cerca de la colonia El Prado. También se recomienda estar alerta en la Avenida Constituyentes.",
+        "alternative_routes": [
+          "Si te encuentras cerca de la colonia El Prado y te diriges hacia el norte por la Avenida Universidad, reduce la velocidad y mantente alerta.",
+          "Si vienes desde la colonia Cimatario y te diriges hacia la zona del incidente, evita la Avenida Constituyentes y utiliza la Calle Ezequiel Montes para llegar a la Avenida Universidad."
+        ],
+        "estimated_impact_time": "No se puede determinar un tiempo estimado de afectación específico. Se recomienda estar atento a las actualizaciones de tráfico y a las indicaciones de las autoridades."
+      },
+      "media": {
+        "report_title": "Ataque Armado y Otros Incidentes en Querétaro: Impacto Potencial en Vialidades",
+        "date": "Fecha no encontrada (Basado en datos disponibles)",
+        "headline": "Ataque Armado Deja Tres Muertos en Querétaro; Autoridades Refuerzan la Seguridad Vial",
+        "summary": "Un ataque armado en Querétaro ha generado preocupación por la seguridad pública. Las autoridades han respondido a este y otros incidentes recientes, incluyendo detenciones por intento de venta de vehículos robados y un fallecimiento. Si bien el impacto vial directo es limitado, se recomienda precaución y atención en ciertas zonas.",
+        "affected_areas_and_routes": "La zona de la colonia El Prado, cerca de la Avenida Universidad, es un área de atención. Se recomienda precaución en esta vía, especialmente en cruces peatonales. La Avenida Constituyentes también podría verse afectada.",
+        "potential_traffic_impact": "Se espera un impacto bajo en el tráfico en general. Sin embargo, la presencia policial y las medidas de seguridad podrían generar demoras en la Avenida Universidad. Se recomienda a los conductores buscar rutas alternativas.",
+        "alternative_routes_and_recommendations": [
+          "Se recomienda a los conductores que transitan por la Avenida Universidad, especialmente en la zona de la colonia El Prado, que reduzcan la velocidad y estén atentos a las indicaciones de las autoridades.",
+          "Se aconseja a los conductores que eviten la Avenida Constituyentes y utilicen la Calle Ezequiel Montes para llegar a la Avenida Universidad si se dirigen a la zona afectada."
+        ],
+        "estimated_impact_time": "No hay un tiempo estimado de afectación específico. Se recomienda a los conductores estar atentos a las actualizaciones de tráfico y a las indicaciones de las autoridades. Se espera que el impacto sea mínimo, pero la situación podría cambiar."
+      }
+    }
+  }
+]

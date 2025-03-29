@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte Ciudadano - Sistema de Seguridad Querétaro</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/report.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" alt="LOGO" class="img">
+            <h1>Reporte Ciudadano</h1>
+            <p>Ayuda a mantener informada a tu comunidad reportando incidentes de seguridad</p>
+        </div>
+
+        <div class="main-content">
+            <div class="report-form-container">
+                <h2>¿Qué está sucediendo?</h2>
+                <p class="subtitle">Tu reporte ayudará a informar a otros ciudadanos sobre situaciones de seguridad</p>
+                
+                <div id="status-message" class="status-message"></div>
+                
+                <form id="report-form" class="report-form">
+                    <div class="form-group">
+                        <label for="incident-type">Tipo de incidente</label>
+                        <select id="incident-type" name="incident_type" required>
+                            <option value="">Seleccionar tipo de incidente</option>
+                            <option value="accidente_vial">Accidente vial</option>
+                            <option value="bloqueo_vial">Bloqueo vial</option>
+                            <option value="trafico_intenso">Tráfico intenso</option>
+                            <option value="robo">Robo</option>
+                            <option value="disturbio">Disturbio</option>
+                            <option value="operativo_policial">Operativo policial</option>
+                            <option value="manifestacion">Manifestación</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="description">Describe lo que está ocurriendo</label>
+                        <textarea id="description" name="description" rows="4" placeholder="Describe brevemente la situación que observas..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="severity">Gravedad</label>
+                        <select id="severity" name="severity">
+                            <option value="baja">Baja - Precaución</option>
+                            <option value="media" selected>Media - Atención</option>
+                            <option value="alta">Alta - Peligro</option>
+                            <option value="critica">Crítica - Emergencia</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="location-name">Lugar específico (opcional)</label>
+                        <input type="text" id="location-name" name="location_name" placeholder="Ej: Av. Constituyentes, Parque Querétaro, etc.">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Ubicación en el mapa</label>
+                        <div id="location-map" class="location-map"></div>
+                        
+                        <div class="location-controls">
+                            <button type="button" id="get-location" class="btn btn-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+                                Usar mi ubicación actual
+                            </button>
+                            <span class="or">o</span>
+                            <span class="help-text">Haz clic en el mapa para seleccionar la ubicación</span>
+                        </div>
+                        
+                        <input type="hidden" id="latitude" name="latitude" required>
+                        <input type="hidden" id="longitude" name="longitude" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="name">Tu nombre (opcional)</label>
+                        <input type="text" id="name" name="name" placeholder="Anónimo">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact">Contacto (opcional, no será publicado)</label>
+                        <input type="text" id="contact" name="contact" placeholder="Correo o teléfono">
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" id="cancel-report" class="btn btn-secondary">Cancelar</button>
+                        <button type="submit" id="submit-report" class="btn btn-primary">Enviar Reporte</button>
+                    </div>
+                </form>
+                
+                <div class="report-info">
+                    <h3>Información importante</h3>
+                    <ul>
+                        <li>Los reportes son anónimos por defecto</li>
+                        <li>La información ayudará a otros ciudadanos a estar informados</li>
+                        <li>Los reportes se mantienen por 24 horas</li>
+                        <li>No incluyas información personal de terceros</li>
+                        <li>En caso de emergencia, llama al 911</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="recent-reports">
+                <h2>Reportes Recientes</h2>
+                <div id="recent-reports-list" class="reports-list">
+                    <div class="loading">Cargando reportes recientes...</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p><a href="/">Volver al Mapa Principal</a></p>
+            <p>Sistema de Monitoreo de Seguridad de Querétaro</p>
+        </div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Script JS -->
+    <script>
+        // Variables globales
+        let map;
+        let marker;
+        let formSubmitted = false;
+
+        // Inicialización cuando el DOM esté listo
+        document.addEventListener('DOMContentLoaded', function() {
+            initMap();
+            setupForm();
+            loadRecentReports();
+        });
+
+        // Inicializar el mapa
+        function initMap() {
+            // Crear mapa centrado en Querétaro
+            map = L.map('location-map').setView([20.5888, -100.3899], 12);
+            
+            // Añadir capa base de OpenStreetMap
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+            
+            // Evento de clic en el mapa para colocar marcador
+            map.on('click', function(e) {
+                setLocationMarker(e.latlng.lat, e.latlng.lng);
+            });
+        }
+
+        // Configurar eventos del formulario
+        function setupForm() {
+            // Botón para obtener ubicación actual
+            document.getElementById('get-location').addEventListener('click', getUserLocation);
+            
+            // Botón para cancelar
+            document.getElementById('cancel-report').addEventListener('click', function() {
+                window.location.href = '/';
+            });
+            
+            // Envío del formulario
+            document.getElementById('report-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                if (formSubmitted) {
+                    showStatus('El formulario ya ha sido enviado', 'warning');
+                    return;
+                }
+                
+                if (validateForm()) {
+                    submitReport();
+                }
+            });
+        }
+
+        // Validar formulario antes de enviar
+        function validateForm() {
+            const incidentType = document.getElementById('incident-type').value;
+            const description = document.getElementById('description').value;
+            const latitude = document.getElementById('latitude').value;
+            const longitude = document.getElementById('longitude').value;
+            
+            if (!incidentType) {
+                showStatus('Por favor selecciona un tipo de incidente', 'error');
+                return false;
+            }
+            
+            if (!description || description.trim().length < 10) {
+                showStatus('Por favor proporciona una descripción más detallada', 'error');
+                return false;
+            }
+            
+            if (!latitude || !longitude) {
+                showStatus('Por favor selecciona una ubicación en el mapa', 'error');
+                return false;
+            }
+            
+            return true;
+        }
+
+        // Obtener ubicación del usuario
+        function getUserLocation() {
+            if (navigator.geolocation) {
+                // Mostrar estado de carga
+                showStatus('Obteniendo tu ubicación...', 'info');
+                
+                navigator.geolocation.getCurrentPosition(
+                    function(position) {
+                        // Ubicación obtenida correctamente
+                        const lat = position.coords.latitude;
+                        const lng = position.coords.longitude;
+                        
+                        // Colocar marcador y centrar mapa
+                        setLocationMarker(lat, lng);
+                        map.setView([lat, lng], 15);
+                        
+                        showStatus('Ubicación obtenida correctamente', 'success');
+                    },
+                    function(error) {
+                        // Error al obtener ubicación
+                        console.error("Error obteniendo ubicación:", error);
+                        let errorMessage = 'No se pudo obtener tu ubicación';
+                        
+                        switch(error.code) {
+                            case error.PERMISSION_DENIED:
+                                errorMessage += '. Permiso denegado.';
+                                break;
+                            case error.POSITION_UNAVAILABLE:
+                                errorMessage += '. Posición no disponible.';
+                                break;
+                            case error.TIMEOUT:
+                                errorMessage += '. Tiempo de espera agotado.';
+                                break;
+                        }
+                        
+                        showStatus(errorMessage, 'error');
+                    },
+                    {
+                        enableHighAccuracy: true,
+                        timeout: 10000,
+                        maximumAge: 0
+                    }
+                );
+            } else {
+                showStatus('Tu navegador no soporta geolocalización', 'error');
+            }
+        }
+
+        // Colocar marcador en el mapa
+        function setLocationMarker(lat, lng) {
+            // Remover marcador existente si lo hay
+            if (marker) {
+                map.removeLayer(marker);
+            }
+            
+            // Crear nuevo marcador
+            marker = L.marker([lat, lng], {
+                draggable: true  // Permitir arrastrar para ajustar posición
+            }).addTo(map);
+            
+            // Evento al arrastrar el marcador para actualizar valores
+            marker.on('dragend', function() {
+                const position = marker.getLatLng();
+                document.getElementById('latitude').value = position.lat;
+                document.getElementById('longitude').value = position.lng;
+            });
+            
+            // Actualizar campos ocultos con las coordenadas
+            document.getElementById('latitude').value = lat;
+            document.getElementById('longitude').value = lng;
+        }
+
+        // Enviar reporte al servidor
+        async function submitReport() {
+            // Prevenir múltiples envíos
+            formSubmitted = true;
+            const submitButton = document.getElementById('submit-report');
+            submitButton.disabled = true;
+            submitButton.innerText = 'Enviando...';
+            
+            // Recopilar datos del formulario
+            const formData = {
+                incident_type: document.getElementById('incident-type').value,
+                description: document.getElementById('description').value,
+                severity: document.getElementById('severity').value,
+                location_name: document.getElementById('location-name').value,
+                latitude: parseFloat(document.getElementById('latitude').value),
+                longitude: parseFloat(document.getElementById('longitude').value),
+                name: document.getElementById('name').value || 'Anónimo',
+                contact: document.getElementById('contact').value || ''
+            };
+            
+            try {
+                // Enviar datos al servidor
+                const response = await fetch('/api/citizen-reports', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    // Mostrar mensaje de éxito
+                    showStatus('¡Reporte enviado correctamente!', 'success');
+                    
+                    // Resetear formulario después de 2 segundos
+                    setTimeout(function() {
+                        document.getElementById('report-form').reset();
+                        if (marker) {
+                            map.removeLayer(marker);
+                            marker = null;
+                        }
+                        document.getElementById('latitude').value = '';
+                        document.getElementById('longitude').value = '';
+                        
+                        // Recargar reportes recientes
+                        loadRecentReports();
+                        
+                        // Habilitar formulario de nuevo
+                        formSubmitted = false;
+                        submitButton.disabled = false;
+                        submitButton.innerText = 'Enviar Reporte';
+                    }, 2000);
+                } else {
+                    // Mostrar error
+                    showStatus('Error: ' + (result.error || 'No se pudo enviar el reporte'), 'error');
+                    formSubmitted = false;
+                    submitButton.disabled = false;
+                    submitButton.innerText = 'Enviar Reporte';
+                }
+            } catch (error) {
+                console.error('Error al enviar reporte:', error);
+                showStatus('Error de conexión. Intenta de nuevo más tarde.', 'error');
+                formSubmitted = false;
+                submitButton.disabled = false;
+                submitButton.innerText = 'Enviar Reporte';
+            }
+        }
+
+        // Mostrar mensajes de estado
+        function showStatus(message, type = 'info') {
+            const statusElement = document.getElementById('status-message');
+            statusElement.textContent = message;
+            statusElement.className = 'status-message ' + type;
+            
+            // Hacer visible
+            statusElement.style.display = 'block';
+            
+            // Ocultar automáticamente después de 5 segundos si no es un error
+            if (type !== 'error') {
+                setTimeout(function() {
+                    statusElement.style.display = 'none';
+                }, 5000);
+            }
+        }
+
+        // Cargar reportes recientes
+        async function loadRecentReports() {
+            const reportsContainer = document.getElementById('recent-reports-list');
+            reportsContainer.innerHTML = '<div class="loading">Cargando reportes recientes...</div>';
+            
+            try {
+                const response = await fetch('/api/citizen-reports');
+                const reports = await response.json();
+                
+                if (reports.length === 0) {
+                    reportsContainer.innerHTML = '<div class="no-reports">No hay reportes recientes</div>';
+                    return;
+                }
+                
+                // Limpiar contenedor
+                reportsContainer.innerHTML = '';
+                
+                // Mostrar reportes (máximo 5)
+                const displayReports = reports.slice(0, 5);
+                
+                displayReports.forEach(report => {
+                    const reportElement = document.createElement('div');
+                    reportElement.className = 'report-card ' + report.severity;
+                    
+                    // Formatear fecha/hora
+                    const timestamp = new Date(report.timestamp);
+                    const timeAgo = getTimeAgo(timestamp);
+                    
+                    // Tipo de incidente formateado
+                    const incidentType = report.tipo.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                    
+                    reportElement.innerHTML = `
+                        <div class="report-header">
+                            <span class="report-type">${incidentType}</span>
+                            <span class="report-time">${timeAgo}</span>
+                        </div>
+                        <div class="report-body">
+                            <p>${report.description}</p>
+                        </div>
+                        <div class="report-footer">
+                            <span class="report-location">${report.lugar || 'Ubicación reportada'}</span>
+                            <span class="report-author">Por: ${report.name || 'Anónimo'}</span>
+                        </div>
+                    `;
+                    
+                    reportsContainer.appendChild(reportElement);
+                });
+                
+                // Mostrar enlace para ver todos si hay más de 5
+                if (reports.length > 5) {
+                    const viewAllLink = document.createElement('div');
+                    viewAllLink.className = 'view-all-link';
+                    viewAllLink.innerHTML = `<a href="/">Ver todos los reportes en el mapa principal</a>`;
+                    reportsContainer.appendChild(viewAllLink);
+                }
+                
+            } catch (error) {
+                console.error('Error al cargar reportes recientes:', error);
+                reportsContainer.innerHTML = '<div class="error">Error al cargar reportes recientes</div>';
+            }
+        }
+
+        // Función para mostrar tiempo relativo
+        function getTimeAgo(date) {
+            const now = new Date();
+            const diffMs = now - date;
+            const diffSec = Math.round(diffMs / 1000);
+            const diffMin = Math.round(diffSec / 60);
+            const diffHour = Math.round(diffMin / 60);
+            
+            if (diffSec < 60) {
+                return 'hace unos segundos';
+            } else if (diffMin < 60) {
+                return `hace ${diffMin} minuto${diffMin !== 1 ? 's' : ''}`;
+            } else if (diffHour < 24) {
+                return `hace ${diffHour} hora${diffHour !== 1 ? 's' : ''}`;
+            } else {
+                return date.toLocaleDateString('es-MX', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
+            }
+        }
+    </script>
+</body>
+</html>

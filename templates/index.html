@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapa de Seguridad de Querétaro</title>
+    <!-- Leaflet CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <!-- Leaflet Heat Map Plugin -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css"
+    />
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Estilos CSS -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.0/socket.io.js"></script>
+    
+    <!-- Script para manejar la conexión de Socket.IO -->
+    <script>
+        // Inicializar la conexión WebSocket cuando se carga la página
+        document.addEventListener('DOMContentLoaded', function() {
+            // Conectar al servidor Socket.IO
+            const socket = io();
+            
+            // Variable para almacenar el estado de la conexión
+            let isConnected = false;
+            
+            // Manejar evento de conexión
+            socket.on('connect', function() {
+                console.log('Conectado al servidor WebSocket');
+                isConnected = true;
+                updateConnectionStatus(true);
+            });
+            
+            // Manejar evento de desconexión
+            socket.on('disconnect', function() {
+                console.log('Desconectado del servidor WebSocket');
+                isConnected = false;
+                updateConnectionStatus(false);
+            });
+            
+            // Recibir estado de conexión
+            socket.on('connection_status', function(data) {
+                console.log('Estado de conexión:', data);
+                // Puedes actualizar elementos UI basados en esta información
+                if (data.clients_count) {
+                    document.getElementById('connected-clients').textContent = data.clients_count;
+                }
+            });
+            
+            // Recibir actualizaciones de datos
+            socket.on('data_update', function(data) {
+                console.log('Actualización de datos recibida:', data);
+                // Recargar los datos en la interfaz sin refrescar la página
+                refreshData();
+                
+                // Mostrar notificación
+                showNotification('Nueva información disponible', data.message || 'Los datos han sido actualizados');
+            });
+            
+            // Recibir notificaciones de nuevos reportes ciudadanos
+            socket.on('new_citizen_report', function(data) {
+                console.log('Nuevo reporte ciudadano:', data);
+                // Si estamos en la página de mapa, actualizar el mapa
+                if (typeof refreshMap === 'function') {
+                    refreshMap();
+                }
+                
+                // Mostrar notificación
+                showNotification('Nuevo reporte ciudadano', 
+                                `Se ha recibido un reporte en ${data.location}: ${data.description}`);
+            });
+            
+            // Función para solicitar actualización manual
+            window.requestDataUpdate = function() {
+                if (isConnected) {
+                    socket.emit('request_update', {});
+                    showLoadingIndicator();
+                } else {
+                    alert('No hay conexión con el servidor. Intente de nuevo más tarde.');
+                }
+            };
+            
+            // Recibir respuesta a solicitud manual
+            socket.on('update_response', function(data) {
+                hideLoadingIndicator();
+                console.log('Respuesta a solicitud de actualización:', data);
+                if (data.success) {
+                    refreshData();
+                    showNotification('Actualización exitosa', data.message);
+                } else {
+                    showNotification('Error', data.message, 'error');
+                }
+            });
+            
+            // Funcion para actualizar el indicador de estado de conexión
+            function updateConnectionStatus(connected) {
+                const statusElement = document.getElementById('connection-status');
+                if (statusElement) {
+                    statusElement.className = connected ? 'status-connected' : 'status-disconnected';
+                    statusElement.textContent = connected ? 'Conectado' : 'Desconectado';
+                }
+            }
+            
+            // Función para mostrar notificaciones
+            function showNotification(title, message, type = 'info') {
+                // Si tienes alguna biblioteca de notificaciones, úsala aquí
+                // Este es un ejemplo de implementación básica
+                const notification = document.createElement('div');
+                notification.className = `notification notification-${type}`;
+                notification.innerHTML = `
+                    <h4>${title}</h4>
+                    <p>${message}</p>
+                    <button class="close-notification">×</button>
+                `;
+                
+                document.body.appendChild(notification);
+                
+                // Cerrar notificación al hacer clic en el botón
+                notification.querySelector('.close-notification').addEventListener('click', function() {
+                    notification.remove();
+                });
+                
+                // Auto-cerrar después de 5 segundos
+                setTimeout(() => {
+                    notification.remove();
+                }, 5000);
+            }
+            
+            // Función para recargar los datos
+            function refreshData() {
+                // Si estás en la página principal, actualiza las tarjetas de incidentes
+                refreshIncidentCards();
+                
+                // Si estás en la página del mapa, actualiza el mapa
+                if (typeof refreshMap === 'function') {
+                    refreshMap();
+                }
+                
+                // Actualiza otros elementos de la interfaz según sea necesario
+            }
+            
+            // Función para refrescar las tarjetas de incidentes
+            function refreshIncidentCards() {
+                // Esta función dependerá de cómo tienes estructurada tu UI
+                // Ejemplo básico:
+                fetch('/api/latest_news')
+                    .then(response => response.json())
+                    .then(data => {
+                        const container = document.getElementById('latest-incidents');
+                        if (container) {
+                            // Actualizar contenido con los nuevos datos
+                            updateIncidentCards(container, data.latest_news);
+                        }
+                    })
+                    .catch(error => console.error('Error al actualizar incidentes:', error));
+            }
+            
+            // Función para actualizar tarjetas de incidentes
+            function updateIncidentCards(container, incidents) {
+                // Implementar según la estructura de tu HTML
+            }
+            
+            // Función para mostrar indicador de carga
+            function showLoadingIndicator() {
+                const loader = document.getElementById('loader');
+                if (loader) {
+                    loader.style.display = 'block';
+                }
+            }
+            
+            // Función para ocultar indicador de carga
+            function hideLoadingIndicator() {
+                const loader = document.getElementById('loader');
+                if (loader) {
+                    loader.style.display = 'none';
+                }
+            }
+        });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          src="{{ url_for('static', filename='img/logo.png') }}"
+          alt="LOGO"
+          class="img"
+        />
+        <h1>Sistema de Monitoreo de Seguridad de Querétaro</h1>
+        <p>Explora incidentes de seguridad y su impacto en vialidades</p>
+      </div>
+
+      <div class="main-content">
+        <div class="map-container">
+          <div class="map-controls">
+            <div class="control-group">
+              <select id="municipality-select" class="municipality-select">
+                <option value="">Seleccionar municipio...</option>
+                <option value="queretaro">Querétaro</option>
+                <option value="corregidora">Corregidora</option>
+                <option value="san-juan-del-rio">San Juan del Río</option>
+                <option value="el-marques">El Marqués</option>
+                <option value="huimilpan">Huimilpan</option>
+              </select>
+              <button id="search-municipality" class="btn btn-primary">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                Buscar
+              </button>
+            </div>
+            <div class="control-group">
+              <button id="locate-me" class="btn btn-primary">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"
+                  />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                Mi Ubicación
+              </button>
+              <button id="toggle-heatmap" class="btn btn-primary">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path
+                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                  ></path>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                </svg>
+                Toggle Mapa de Calor
+              </button>
+            </div>
+            <div class="control-group">
+              <button id="reset-view" class="btn btn-secondary">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M3 12a9 9 0 0 1 9-9 9 9 0 0 1 9 9 9 9 0 0 1-9 9 9 9 0 0 1-9-9z"
+                  />
+                  <circle cx="12" cy="12" r="1" />
+                </svg>
+                Reiniciar Mapa
+              </button>
+              <button id="refresh-data" class="btn btn-primary">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"
+                  />
+                </svg>
+                Actualizar Datos
+              </button>
+            </div>
+          </div>
+          <div id="map" class="map"></div>
+          <div class="legend">
+            <div class="legend-title">Tipos de Incidentes</div>
+            <div class="legend-item">
+              <div class="color-box safe"></div>
+              Zona Segura
+            </div>
+            <div class="legend-item">
+              <div class="color-box traffic"></div>
+              Accidente vial
+            </div>
+            <div class="legend-item">
+              <div class="color-box theft"></div>
+              Robo
+            </div>
+            <div class="legend-item">
+              <div class="color-box violent"></div>
+              Incidente violento
+            </div>
+            <div class="legend-item">
+              <div class="color-box other"></div>
+              Otro
+            </div>
+          </div>
+          <!-- Contenedor para la gráfica -->
+          <div class="chart-container">
+            <canvas id="incidents-chart"></canvas>
+          </div>
+          <div class="report-citizen-button-container">
+            <a href="{{ url_for('report') }}" class="btn btn-report-citizen">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"
+                />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Reportar Incidente
+            </a>
+          </div>
+        </div>
+
+        <!-- Área de información del incidente seleccionado -->
+        <div class="info-card">
+          <h2>Información del Incidente</h2>
+          <div id="info-content" class="info-content">
+            <div class="municipality-header">
+              <h3 id="incident-title">Selecciona un incidente en el mapa</h3>
+              <div id="security-badge" class="security-badge standard">
+                Estándar
+              </div>
+            </div>
+            <div id="incident-description" class="municipality-description">
+              Haz clic en un marcador para ver información detallada.
+            </div>
+
+            <div class="incident-details-container">
+              <div class="incident-detail">
+                <strong>Lugar:</strong>
+                <span id="incident-location">-</span>
+              </div>
+              <div class="incident-detail">
+                <strong>Fecha/Hora:</strong>
+                <span id="incident-datetime">-</span>
+              </div>
+              <div class="incident-detail">
+                <strong>Tipo:</strong>
+                <span id="incident-type">-</span>
+              </div>
+              <div class="incident-detail">
+                <strong>Impacto Vial:</strong>
+                <span id="incident-impact">-</span>
+              </div>
+            </div>
+
+            <div
+              id="recommendations-container"
+              class="recommendations-container"
+            >
+              <h3>Recomendaciones</h3>
+              <ul id="recommendations-list"></ul>
+            </div>
+
+            <div class="safety-stats">
+              <div class="stat-box" style="background-color: var(--color-safe)">
+                <h4>Índice de Seguridad</h4>
+                <span id="safety-index">-</span>
+              </div>
+              <div
+                class="stat-box"
+                style="background-color: var(--color-secondary)"
+              >
+                <h4>Incidentes Reportados</h4>
+                <span id="reported-incidents">0</span>
+              </div>
+              <div
+                class="stat-box"
+                style="background-color: var(--color-primary-dark)"
+              >
+                <h4>Nivel de Riesgo</h4>
+                <span id="risk-level">-</span>
+              </div>
+            </div>
+
+            <!-- Pestañas para diferentes reportes -->
+            <div class="tabs-container">
+              <div class="tabs">
+                <button class="tab-btn active" data-tab="citizen">
+                  Ciudadanos
+                </button>
+                <button class="tab-btn" data-tab="authority">
+                  Autoridades
+                </button>
+                <button class="tab-btn" data-tab="media">Prensa</button>
+              </div>
+              <div class="tab-content">
+                <div id="citizen-tab" class="tab-pane active">
+                  <div id="citizen-report">
+                    Cargando reporte para ciudadanos...
+                  </div>
+                </div>
+                <div id="authority-tab" class="tab-pane">
+                  <div id="authority-report">
+                    Cargando reporte para autoridades...
+                  </div>
+                </div>
+                <div id="media-tab" class="tab-pane">
+                  <div id="media-report">Cargando reporte para prensa...</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sección de últimas noticias -->
+          <div class="latest-news-section">
+            <h3>Últimas Noticias</h3>
+            <div id="latest-news-container">
+              <div class="loading-spinner">Cargando noticias recientes...</div>
+            </div>
+          </div>
+
+          <!-- Sección de comentarios -->
+          <div class="comments-section">
+            <h3>Comentarios</h3>
+            <div class="comment-form">
+              <textarea
+                id="comment-input"
+                placeholder="Escribe tu comentario..."
+              ></textarea>
+              <button id="submit-comment">Enviar</button>
+            </div>
+            <div id="comments-list"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>Última actualización: <span id="last-update">Cargando...</span></p>
+        <p>Desarrollado con LangGraph y Flask</p>
+      </div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Leaflet Heat Map Plugin -->
+    <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+    <!-- JavaScript principal -->
+    <script
+      src="{{ url_for('static', filename='js/script.js') }}"
+      defer
+    ></script>
+  </body>
+</html>
