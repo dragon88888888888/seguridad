@@ -1,36 +1,24 @@
 {
-  "timestamp": "2025-03-29T07:10:01.989528",
+  "timestamp": "2025-04-02T20:21:10.520303",
   "incidents": [
-    {
-      "titulo": "En 24 horas, Policía Estatal detiene a 127 personas | Querétaro",
-      "url": "https://www.eluniversalqueretaro.mx/seguridad/en-24-horas-policia-estatal-detiene-a-127-personas/",
-      "lugar": "Corregidora",
-      "fecha": null,
-      "hora": null,
-      "tipo": "Recuperación de vehículo robado y detención",
-      "gravedad": "media",
-      "resumen": "En el municipio de Corregidora, un ciudadano solicitó apoyo policial para verificar el estatus legal de un vehículo que iba a comprar. Tras revisar el número de serie, se confirmó que tenía reporte de robo en Toluca, Estado de México, por lo que el vendedor fue detenido.",
-      "impacto_vial": "ninguna",
-      "coordenadas": {
-        "lat": 20.4778128,
-        "lng": -100.4412472
-      }
-    },
     {
       "titulo": "Noticias de Querétaro - Quadratin",
       "url": "https://queretaro.quadratin.com.mx/",
-      "lugar": null,
+      "lugar": "inmediaciones del Anillo Vial Fray Junípero Serra",
       "fecha": null,
       "hora": null,
-      "tipo": "muerte",
-      "gravedad": "alta",
-      "resumen": "Un menor de edad perdió la vida a pesar de los esfuerzos del personal de emergencia.",
-      "impacto_vial": "ninguna",
-      "coordenadas": null
+      "tipo": "operativo de rutina",
+      "gravedad": null,
+      "resumen": "Se menciona un operativo de rutina en las inmediaciones del Anillo Vial Fray Junípero Serra.",
+      "impacto_vial": "Anillo Vial Fray Junípero Serra",
+      "coordenadas": {
+        "lat": 20.58806,
+        "lng": -100.38806
+      }
     },
     {
-      "titulo": "Todas las noticias - Municipio de Querétaro",
-      "url": "https://municipiodequeretaro.gob.mx/secretarias/secretaria-de-seguridad-publica/noticias-de-seguridad/todas-las-noticias/",
+      "titulo": "Noticias Recientes - Municipio de Querétaro",
+      "url": "https://municipiodequeretaro.gob.mx/noticias-recientes/",
       "lugar": null,
       "fecha": null,
       "hora": null,
@@ -48,151 +36,140 @@
       "hora": null,
       "tipo": "ataque armado",
       "gravedad": "alta",
-      "resumen": "Un ataque armado en Querétaro resultó en la muerte de tres personas y dejó a una persona herida.",
+      "resumen": "Un ataque armado en Querétaro resultó en la muerte de tres personas y una persona herida.",
       "impacto_vial": "ninguna",
       "coordenadas": null
     },
     {
-      "titulo": "Refuerza Kuri seguridad en la Sierra Gorda con más patrullas",
-      "url": "https://oem.com.mx/diariodequeretaro/local/refuerza-kuri-seguridad-en-la-sierra-gorda-con-mas-patrullas-22359443",
+      "titulo": "Seguridad - Diario de Querétaro",
+      "url": "https://oem.com.mx/diariodequeretaro/tags/temas/seguridad",
+      "lugar": "Universidad",
+      "fecha": null,
+      "hora": null,
+      "tipo": "riña vial",
+      "gravedad": null,
+      "resumen": "No hay detenidos por una riña vial en la Universidad.",
+      "impacto_vial": null,
+      "coordenadas": {
+        "lat": 20.5989564,
+        "lng": -100.387492
+      }
+    },
+    {
+      "titulo": "Supervisan alcaldes de la zona metropolitana operativo de seguridad",
+      "url": "https://oem.com.mx/diariodequeretaro/local/supervisan-alcaldes-de-la-zona-metropolitana-operativo-de-seguridad-22141673",
       "lugar": null,
       "fecha": null,
       "hora": null,
-      "tipo": null,
+      "tipo": "incumplimiento de la normatividad ambiental",
       "gravedad": null,
-      "resumen": "El artículo no reporta ningún incidente principal. Se enfoca en la entrega de patrullas y otros eventos relacionados con la administración pública y actividades sociales.",
+      "resumen": "Autoridades municipales verificaron el incumplimiento de la normatividad ambiental durante las inspecciones realizadas.",
       "impacto_vial": "ninguna",
       "coordenadas": null
     }
   ],
   "main_incident": {
-    "id": 3,
-    "noticia": "Últimas Noticias y Eventos de Inseguridad en Querétaro - N+",
-    "url": "https://www.nmas.com.mx/temas/inseguridad-queretaro/",
+    "id": 0,
+    "noticia": "Noticias de Querétaro - Quadratin",
+    "url": "https://queretaro.quadratin.com.mx/",
     "fecha_publicacion": "Fecha no encontrada",
-    "lugar": null,
+    "lugar": "inmediaciones del Anillo Vial Fray Junípero Serra",
     "fecha_incidente": null,
     "hora_incidente": null,
-    "tipo_incidente": "ataque armado",
-    "gravedad": "alta",
-    "resumen": "Un ataque armado en Querétaro resultó en la muerte de tres personas y dejó a una persona herida.",
-    "impacto_vial": "ninguna"
+    "tipo_incidente": "operativo de rutina",
+    "gravedad": null,
+    "resumen": "Se menciona un operativo de rutina en las inmediaciones del Anillo Vial Fray Junípero Serra.",
+    "impacto_vial": "Anillo Vial Fray Junípero Serra"
   },
   "analysis": {
-    "pattern": "Dado que el incidente ocurrió en Querétaro, podría indicar una concentración de actividad delictiva en esa zona. Sin información de fecha y hora, no se pueden identificar patrones temporales. Sin embargo, ataques armados suelen estar asociados a horarios donde hay menos presencia policial o mayor movilidad de objetivos.",
-    "impact": "bajo",
+    "pattern": "Dado que se trata de un operativo de rutina, no se puede determinar un patrón temporal o espacial específico sin más información. Los operativos de rutina pueden ocurrir en cualquier momento y en cualquier lugar dentro de las inmediaciones del Anillo Vial Fray Junípero Serra. Sin embargo, es probable que se realicen en horarios de alta afluencia vehicular para maximizar su efectividad, o en horarios específicos basados en análisis de datos de seguridad.",
+    "impact": "Moderado",
     "risk_factors": [
-      "Presencia de grupos armados.",
-      "Posiblemente, falta de vigilancia o seguridad en la zona.",
-      "Factores socioeconómicos que podrían influir en la actividad delictiva."
+      "Presencia de autoridades realizando el operativo.",
+      "Posible reducción de carriles o cierres parciales de la vía.",
+      "Curiosidad de los conductores, lo que puede generar congestión.",
+      "Volumen de tráfico en el momento del operativo."
     ],
-    "affected_routes": "Ninguna. El resumen indica que no hubo impacto vial directo.",
-    "estimated_duration": "Ninguna. El resumen indica que no hubo impacto vial directo."
+    "affected_routes": [
+      "Anillo Vial Fray Junípero Serra",
+      "Vías de acceso y salida al Anillo Vial Fray Junípero Serra en las inmediaciones del operativo."
+    ],
+    "estimated_duration": "La duración del impacto en vialidades es variable, pero generalmente se estima entre 30 minutos y 2 horas, dependiendo de la duración del operativo, el número de vehículos involucrados y la congestión resultante. Operativos más extensos o con mayor presencia policial podrían extender la duración del impacto."
   },
   "recommendations": [
     {
-      "recomendacion": "Al transitar por la Avenida Constituyentes, especialmente cerca de la colonia El Carrizal, mantén una velocidad moderada y presta atención a peatones y ciclistas, ya que el incidente ocurrió en una zona con tráfico peatonal potencial."
+      "recomendacion": "Si te diriges hacia el norte por el Anillo Vial Fray Junípero Serra, reduce tu velocidad al acercarte a la altura de la colonia El Refugio y mantente atento a las indicaciones de los oficiales de tránsito, ya que el incidente podría afectar el flujo vehicular en los accesos."
     },
     {
-      "recomendacion": "Si te encuentras en la zona de la colonia Centro Sur, cerca de la Avenida Bernardo Quintana, revisa constantemente los espejos retrovisores y mantén una distancia segura con otros vehículos, anticipando posibles maniobras inesperadas de otros conductores."
+      "recomendacion": "Si vienes desde la colonia Jurica Campestre y planeas incorporarte al Anillo Vial Fray Junípero Serra, considera tomar vías alternas como la Avenida Paseo de la República o la Avenida Bernardo Quintana para evitar retrasos debido al incidente."
     },
     {
-      "recomendacion": "Si te diriges hacia la zona de Jurica, cerca de la Avenida Anillo Vial Fray Junípero Serra, asegúrate de revisar el estado de tus neumáticos y frenos, ya que la falta de información sobre el tipo de incidente sugiere que podría estar relacionado con factores mecánicos o de infraestructura vial."
+      "recomendacion": "Si te encuentras en la zona de la colonia Milenio III y necesitas salir hacia el Anillo Vial Fray Junípero Serra, verifica el estado del tráfico en tiempo real a través de aplicaciones como Waze o Google Maps antes de iniciar tu trayecto, para evaluar si es mejor tomar la Avenida Constituyentes como ruta alternativa."
     },
     {
-      "recomendacion": "Si te encuentras en la zona de la colonia Milenio III, cerca de la Avenida Prolongación Bernardo Quintana, evita distracciones como el uso del teléfono móvil y mantén la concentración en la conducción, especialmente en zonas residenciales."
+      "recomendacion": "Para quienes se dirigen hacia el sur por el Anillo Vial Fray Junípero Serra, y el incidente está afectando los carriles, se recomienda tomar precauciones adicionales al pasar por la zona de la colonia Lomas de Querétaro, manteniendo una distancia segura con otros vehículos y estar atento a posibles desvíos."
     },
     {
-      "recomendacion": "Al circular por la Avenida Universidad, cerca de la colonia Prados del Mirador, verifica el funcionamiento de tus luces direccionales y asegúrate de señalizar tus movimientos con anticipación, para evitar cualquier tipo de incidente."
+      "recomendacion": "Si utilizas el transporte público y te diriges hacia el Anillo Vial Fray Junípero Serra, verifica con anticipación si hay cambios en las rutas de los autobuses que pasan por la zona, y considera descender en paradas previas a la altura de la colonia Juriquilla para evitar retrasos."
     }
   ],
   "reports": {
     "authorities": {
-      "report_type": "Informe Técnico de Seguridad Vial",
-      "date": "Fecha no especificada (Basado en la información proporcionada)",
-      "summary": "El informe presenta un análisis de incidentes recientes en Querétaro, incluyendo un ataque armado con consecuencias fatales y otros eventos relacionados con la seguridad. Se destaca la necesidad de reforzar la vigilancia y la prevención en áreas específicas.",
-      "incident_details": [
-        {
-          "incident_id": 3,
-          "incident_type": "Ataque Armado",
-          "location": "Querétaro (sin ubicación específica)",
-          "severity": "Alta",
-          "impact": "Ninguno (directo en vialidades, pero genera preocupación)",
-          "description": "Un ataque armado resultó en la muerte de tres personas y un herido. Aunque no hay impacto vial directo reportado, este tipo de incidente genera inseguridad y puede afectar la movilidad indirectamente.",
-          "recommendations": "Incrementar la presencia policial en zonas de alta incidencia delictiva. Fortalecer la investigación para prevenir futuros ataques. Monitorear la situación en tiempo real para detectar posibles focos de conflicto."
-        },
-        {
-          "incident_type": "Recuperación de vehículo robado y detención",
-          "location": "Corregidora",
-          "severity": "Media",
-          "impact": "Ninguno",
-          "description": "Detención de un individuo por posesión de un vehículo robado. No tiene impacto directo en vialidades.",
-          "recommendations": "Continuar con los operativos de verificación de vehículos para prevenir el robo y la circulación de vehículos ilegales."
-        },
-        {
-          "incident_type": "Muerte",
-          "location": "Sin especificar",
-          "severity": "Alta",
-          "impact": "Ninguno",
-          "description": "Fallecimiento de un menor de edad. No se especifica causa ni lugar, por lo que no se puede determinar su impacto vial.",
-          "recommendations": "Investigar las causas del fallecimiento y determinar si hubo relación con la seguridad vial."
-        }
+      "report_type": "Informe Técnico para Autoridades",
+      "summary": "Se reporta un operativo de rutina en las inmediaciones del Anillo Vial Fray Junípero Serra. Adicionalmente, se registró un ataque armado con consecuencias fatales en otro punto de la ciudad, sin impacto directo en las vialidades mencionadas.",
+      "affected_routes": [
+        "Anillo Vial Fray Junípero Serra (específicamente en las inmediaciones de la colonia El Refugio)"
       ],
-      "analysis": {
-        "incident_type": "Otro",
+      "incident_details": {
+        "incident_type": "Operativo de rutina",
+        "location": "Anillo Vial Fray Junípero Serra",
         "coordinates": {
-          "lat": 20.5505672,
-          "lng": -100.3724234
+          "lat": 20.58806,
+          "lng": -100.38806
         },
-        "impact_analysis": "Bajo",
-        "predictions": "Bajo",
-        "recommendations": [
-          {
-            "recomendacion": "Al transitar por la Avenida Constituyentes, especialmente cerca de la colonia El Carrizal, mantén una velocidad moderada y presta atención a peatones y ciclistas, ya que el incidente ocurrió en una zona con tráfico peatonal potencial."
-          },
-          {
-            "recomendacion": "Si te encuentras en la zona de la colonia Centro Sur, cerca de la Avenida Bernardo Quintana, revisa constantemente los espejos retrovisores y mantén una distancia segura con otros vehículos, anticipando posibles maniobras inesperadas de otros conductores."
-          }
-        ]
+        "severity": "Moderada",
+        "estimated_impact": "Moderado",
+        "additional_incident": {
+          "type": "Ataque armado",
+          "severity": "Alta",
+          "location": "No especificada",
+          "impact_vial": "Ninguna"
+        }
       },
-      "affected_routes": "No se identifican rutas directamente afectadas por los incidentes reportados. Sin embargo, la inseguridad generalizada puede afectar la percepción de seguridad en todas las vialidades.",
-      "alternative_routes": "No aplica directamente. Se recomienda a las autoridades mantener una vigilancia constante en todas las vialidades y reforzar la seguridad en zonas de alta incidencia delictiva.",
-      "estimated_impact_time": "No aplica. La afectación es más de tipo psicológico y de percepción de seguridad que de impacto directo en tiempos de traslado."
+      "recommendations": [
+        "Monitorear el flujo vehicular en el Anillo Vial Fray Junípero Serra, especialmente en la zona del operativo.",
+        "Gestionar el tráfico y proporcionar información en tiempo real a los conductores.",
+        "Evaluar la necesidad de desvíos y señalización adecuada.",
+        "Coordinar con los cuerpos de emergencia en caso de ser necesario."
+      ],
+      "estimated_time_of_impact": "Se espera afectación moderada en el flujo vehicular durante la duración del operativo.  El tiempo de afectación dependerá de la duración del operativo y la afluencia vehicular."
     },
     "citizens": {
-      "report_type": "Alerta de Seguridad Vial para Ciudadanos",
-      "date": "Fecha no especificada (Basado en la información proporcionada)",
-      "summary": "Se recomienda a los ciudadanos extremar precauciones debido a incidentes recientes en Querétaro, incluyendo un ataque armado. Se enfatiza la importancia de la precaución y la atención en zonas específicas.",
-      "affected_routes": "Si bien no hay rutas directamente afectadas por cierres o bloqueos, se recomienda precaución en las siguientes zonas:",
-      "specific_areas": [
-        "Avenida Constituyentes, especialmente cerca de la colonia El Carrizal: Presta atención a peatones y ciclistas.",
-        "Colonia Centro Sur, cerca de la Avenida Bernardo Quintana: Mantén una distancia segura y anticipa maniobras inesperadas."
+      "report_type": "Información para Conductores",
+      "summary": "Se informa sobre un operativo de rutina en el Anillo Vial Fray Junípero Serra. Se recomienda precaución y considerar rutas alternativas.",
+      "affected_routes": [
+        "Anillo Vial Fray Junípero Serra (cercanías de la colonia El Refugio)"
       ],
       "recommendations": [
-        "Mantén una velocidad moderada y respeta los límites de velocidad.",
-        "Presta atención a tu entorno y mantente alerta ante cualquier situación sospechosa.",
-        "Evita transitar por zonas peligrosas, especialmente durante la noche.",
-        "Reporta cualquier actividad sospechosa a las autoridades.",
-        "Revisa constantemente los espejos retrovisores y mantén una distancia segura con otros vehículos."
+        "Si se dirige hacia el norte por el Anillo Vial Fray Junípero Serra, reduzca la velocidad al acercarse a la altura de la colonia El Refugio y siga las indicaciones de los oficiales de tránsito.",
+        "Si viene de la colonia Jurica Campestre y planea incorporarse al Anillo Vial Fray Junípero Serra, considere tomar vías alternativas como la Avenida Paseo de la República o la Avenida Bernardo Quintana."
       ],
-      "alternative_routes": "No se sugieren rutas alternativas específicas, pero se recomienda evitar, en la medida de lo posible, las zonas mencionadas en horarios de alta afluencia o en condiciones de poca visibilidad.",
-      "estimated_impact_time": "El impacto en los tiempos de traslado es mínimo, pero se recomienda considerar un margen de tiempo adicional para evitar retrasos debido a posibles congestionamientos o situaciones de inseguridad."
+      "estimated_time_of_impact": "Se anticipan posibles retrasos. Se recomienda planificar su ruta y considerar tiempo adicional para sus traslados.  La duración de la afectación dependerá del tiempo que dure el operativo."
     },
     "media": {
-      "report_type": "Nota Informativa: Aumento de la Inseguridad en Querétaro",
-      "date": "Fecha no especificada (Basado en la información proporcionada)",
-      "headline": "Ataque Armado y Otros Incidentes Generan Alerta en Querétaro",
-      "summary": "Querétaro enfrenta un aumento en la inseguridad, con un ataque armado que resultó en la muerte de tres personas como el incidente más reciente. Aunque no hay afectaciones directas en las vialidades, la situación genera preocupación y requiere medidas de precaución.",
-      "incident_highlights": [
-        "Un ataque armado en Querétaro dejó un saldo de tres muertos y un herido.",
-        "Se reportó la detención de una persona por posesión de un vehículo robado en Corregidora.",
-        "Se reportó el fallecimiento de un menor de edad (sin detalles sobre el lugar ni causa)."
+      "report_type": "Nota Informativa",
+      "headline": "Operativo en el Anillo Vial Fray Junípero Serra genera afectaciones viales",
+      "summary": "Un operativo de rutina en el Anillo Vial Fray Junípero Serra está causando afectaciones en el flujo vehicular. Las autoridades recomiendan precaución y el uso de rutas alternas.",
+      "affected_routes": [
+        "Anillo Vial Fray Junípero Serra (zona de la colonia El Refugio)"
       ],
-      "impact_on_vialities": "Si bien los incidentes reportados no han generado cierres viales directos, la situación de inseguridad generalizada puede afectar la percepción de seguridad y la fluidez del tráfico.",
-      "expert_commentary": "Expertos en seguridad sugieren a los ciudadanos extremar precauciones, especialmente en zonas con alta incidencia delictiva.",
-      "affected_routes": "No hay rutas directamente afectadas por cierres o bloqueos. Sin embargo, se recomienda precaución en Avenida Constituyentes (cerca de El Carrizal) y en la zona de Centro Sur, cerca de Bernardo Quintana.",
-      "alternative_routes": "No se sugieren rutas alternativas específicas. Se recomienda a los conductores mantenerse informados sobre la situación y tomar precauciones adicionales.",
-      "estimated_impact_time": "No se espera un impacto significativo en los tiempos de traslado, pero se recomienda a los conductores considerar un margen de tiempo adicional y estar atentos a las actualizaciones de las autoridades."
+      "details": "Un operativo de rutina en las inmediaciones del Anillo Vial Fray Junípero Serra está generando tráfico lento en la zona.  Se recomienda a los conductores que transitan por la zona, reducir la velocidad y seguir las indicaciones de las autoridades.  Se sugiere a los conductores que vienen de Jurica Campestre, considerar vías alternas como la Avenida Paseo de la República o la Avenida Bernardo Quintana.",
+      "recommendations": [
+        "Evitar, en la medida de lo posible, la zona del operativo.",
+        "Utilizar rutas alternas para evitar retrasos.",
+        "Mantenerse informado a través de fuentes oficiales y medios de comunicación."
+      ],
+      "estimated_time_of_impact": "Se espera que las afectaciones viales persistan durante la duración del operativo.  Se recomienda a los conductores estar atentos a las actualizaciones de tráfico y planificar sus rutas en consecuencia."
     }
   }
 }

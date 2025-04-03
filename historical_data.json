@@ -1,5 +1,330 @@
 [
   {
+    "timestamp": "2025-04-02T20:21:10.520303",
+    "incidents": [
+      {
+        "titulo": "Noticias de Querétaro - Quadratin",
+        "url": "https://queretaro.quadratin.com.mx/",
+        "lugar": "inmediaciones del Anillo Vial Fray Junípero Serra",
+        "fecha": null,
+        "hora": null,
+        "tipo": "operativo de rutina",
+        "gravedad": null,
+        "resumen": "Se menciona un operativo de rutina en las inmediaciones del Anillo Vial Fray Junípero Serra.",
+        "impacto_vial": "Anillo Vial Fray Junípero Serra",
+        "coordenadas": {
+          "lat": 20.58806,
+          "lng": -100.38806
+        }
+      },
+      {
+        "titulo": "Noticias Recientes - Municipio de Querétaro",
+        "url": "https://municipiodequeretaro.gob.mx/noticias-recientes/",
+        "lugar": null,
+        "fecha": null,
+        "hora": null,
+        "tipo": null,
+        "gravedad": null,
+        "resumen": null,
+        "impacto_vial": "ninguna",
+        "coordenadas": null
+      },
+      {
+        "titulo": "Últimas Noticias y Eventos de Inseguridad en Querétaro - N+",
+        "url": "https://www.nmas.com.mx/temas/inseguridad-queretaro/",
+        "lugar": null,
+        "fecha": null,
+        "hora": null,
+        "tipo": "ataque armado",
+        "gravedad": "alta",
+        "resumen": "Un ataque armado en Querétaro resultó en la muerte de tres personas y una persona herida.",
+        "impacto_vial": "ninguna",
+        "coordenadas": null
+      },
+      {
+        "titulo": "Seguridad - Diario de Querétaro",
+        "url": "https://oem.com.mx/diariodequeretaro/tags/temas/seguridad",
+        "lugar": "Universidad",
+        "fecha": null,
+        "hora": null,
+        "tipo": "riña vial",
+        "gravedad": null,
+        "resumen": "No hay detenidos por una riña vial en la Universidad.",
+        "impacto_vial": null,
+        "coordenadas": {
+          "lat": 20.5989564,
+          "lng": -100.387492
+        }
+      },
+      {
+        "titulo": "Supervisan alcaldes de la zona metropolitana operativo de seguridad",
+        "url": "https://oem.com.mx/diariodequeretaro/local/supervisan-alcaldes-de-la-zona-metropolitana-operativo-de-seguridad-22141673",
+        "lugar": null,
+        "fecha": null,
+        "hora": null,
+        "tipo": "incumplimiento de la normatividad ambiental",
+        "gravedad": null,
+        "resumen": "Autoridades municipales verificaron el incumplimiento de la normatividad ambiental durante las inspecciones realizadas.",
+        "impacto_vial": "ninguna",
+        "coordenadas": null
+      }
+    ],
+    "main_incident": {
+      "id": 0,
+      "noticia": "Noticias de Querétaro - Quadratin",
+      "url": "https://queretaro.quadratin.com.mx/",
+      "fecha_publicacion": "Fecha no encontrada",
+      "lugar": "inmediaciones del Anillo Vial Fray Junípero Serra",
+      "fecha_incidente": null,
+      "hora_incidente": null,
+      "tipo_incidente": "operativo de rutina",
+      "gravedad": null,
+      "resumen": "Se menciona un operativo de rutina en las inmediaciones del Anillo Vial Fray Junípero Serra.",
+      "impacto_vial": "Anillo Vial Fray Junípero Serra"
+    },
+    "analysis": {
+      "pattern": "Dado que se trata de un operativo de rutina, no se puede determinar un patrón temporal o espacial específico sin más información. Los operativos de rutina pueden ocurrir en cualquier momento y en cualquier lugar dentro de las inmediaciones del Anillo Vial Fray Junípero Serra. Sin embargo, es probable que se realicen en horarios de alta afluencia vehicular para maximizar su efectividad, o en horarios específicos basados en análisis de datos de seguridad.",
+      "impact": "Moderado",
+      "risk_factors": [
+        "Presencia de autoridades realizando el operativo.",
+        "Posible reducción de carriles o cierres parciales de la vía.",
+        "Curiosidad de los conductores, lo que puede generar congestión.",
+        "Volumen de tráfico en el momento del operativo."
+      ],
+      "affected_routes": [
+        "Anillo Vial Fray Junípero Serra",
+        "Vías de acceso y salida al Anillo Vial Fray Junípero Serra en las inmediaciones del operativo."
+      ],
+      "estimated_duration": "La duración del impacto en vialidades es variable, pero generalmente se estima entre 30 minutos y 2 horas, dependiendo de la duración del operativo, el número de vehículos involucrados y la congestión resultante. Operativos más extensos o con mayor presencia policial podrían extender la duración del impacto."
+    },
+    "recommendations": [
+      {
+        "recomendacion": "Si te diriges hacia el norte por el Anillo Vial Fray Junípero Serra, reduce tu velocidad al acercarte a la altura de la colonia El Refugio y mantente atento a las indicaciones de los oficiales de tránsito, ya que el incidente podría afectar el flujo vehicular en los accesos."
+      },
+      {
+        "recomendacion": "Si vienes desde la colonia Jurica Campestre y planeas incorporarte al Anillo Vial Fray Junípero Serra, considera tomar vías alternas como la Avenida Paseo de la República o la Avenida Bernardo Quintana para evitar retrasos debido al incidente."
+      },
+      {
+        "recomendacion": "Si te encuentras en la zona de la colonia Milenio III y necesitas salir hacia el Anillo Vial Fray Junípero Serra, verifica el estado del tráfico en tiempo real a través de aplicaciones como Waze o Google Maps antes de iniciar tu trayecto, para evaluar si es mejor tomar la Avenida Constituyentes como ruta alternativa."
+      },
+      {
+        "recomendacion": "Para quienes se dirigen hacia el sur por el Anillo Vial Fray Junípero Serra, y el incidente está afectando los carriles, se recomienda tomar precauciones adicionales al pasar por la zona de la colonia Lomas de Querétaro, manteniendo una distancia segura con otros vehículos y estar atento a posibles desvíos."
+      },
+      {
+        "recomendacion": "Si utilizas el transporte público y te diriges hacia el Anillo Vial Fray Junípero Serra, verifica con anticipación si hay cambios en las rutas de los autobuses que pasan por la zona, y considera descender en paradas previas a la altura de la colonia Juriquilla para evitar retrasos."
+      }
+    ],
+    "reports": {
+      "authorities": {
+        "report_type": "Informe Técnico para Autoridades",
+        "summary": "Se reporta un operativo de rutina en las inmediaciones del Anillo Vial Fray Junípero Serra. Adicionalmente, se registró un ataque armado con consecuencias fatales en otro punto de la ciudad, sin impacto directo en las vialidades mencionadas.",
+        "affected_routes": [
+          "Anillo Vial Fray Junípero Serra (específicamente en las inmediaciones de la colonia El Refugio)"
+        ],
+        "incident_details": {
+          "incident_type": "Operativo de rutina",
+          "location": "Anillo Vial Fray Junípero Serra",
+          "coordinates": {
+            "lat": 20.58806,
+            "lng": -100.38806
+          },
+          "severity": "Moderada",
+          "estimated_impact": "Moderado",
+          "additional_incident": {
+            "type": "Ataque armado",
+            "severity": "Alta",
+            "location": "No especificada",
+            "impact_vial": "Ninguna"
+          }
+        },
+        "recommendations": [
+          "Monitorear el flujo vehicular en el Anillo Vial Fray Junípero Serra, especialmente en la zona del operativo.",
+          "Gestionar el tráfico y proporcionar información en tiempo real a los conductores.",
+          "Evaluar la necesidad de desvíos y señalización adecuada.",
+          "Coordinar con los cuerpos de emergencia en caso de ser necesario."
+        ],
+        "estimated_time_of_impact": "Se espera afectación moderada en el flujo vehicular durante la duración del operativo.  El tiempo de afectación dependerá de la duración del operativo y la afluencia vehicular."
+      },
+      "citizens": {
+        "report_type": "Información para Conductores",
+        "summary": "Se informa sobre un operativo de rutina en el Anillo Vial Fray Junípero Serra. Se recomienda precaución y considerar rutas alternativas.",
+        "affected_routes": [
+          "Anillo Vial Fray Junípero Serra (cercanías de la colonia El Refugio)"
+        ],
+        "recommendations": [
+          "Si se dirige hacia el norte por el Anillo Vial Fray Junípero Serra, reduzca la velocidad al acercarse a la altura de la colonia El Refugio y siga las indicaciones de los oficiales de tránsito.",
+          "Si viene de la colonia Jurica Campestre y planea incorporarse al Anillo Vial Fray Junípero Serra, considere tomar vías alternativas como la Avenida Paseo de la República o la Avenida Bernardo Quintana."
+        ],
+        "estimated_time_of_impact": "Se anticipan posibles retrasos. Se recomienda planificar su ruta y considerar tiempo adicional para sus traslados.  La duración de la afectación dependerá del tiempo que dure el operativo."
+      },
+      "media": {
+        "report_type": "Nota Informativa",
+        "headline": "Operativo en el Anillo Vial Fray Junípero Serra genera afectaciones viales",
+        "summary": "Un operativo de rutina en el Anillo Vial Fray Junípero Serra está causando afectaciones en el flujo vehicular. Las autoridades recomiendan precaución y el uso de rutas alternas.",
+        "affected_routes": [
+          "Anillo Vial Fray Junípero Serra (zona de la colonia El Refugio)"
+        ],
+        "details": "Un operativo de rutina en las inmediaciones del Anillo Vial Fray Junípero Serra está generando tráfico lento en la zona.  Se recomienda a los conductores que transitan por la zona, reducir la velocidad y seguir las indicaciones de las autoridades.  Se sugiere a los conductores que vienen de Jurica Campestre, considerar vías alternas como la Avenida Paseo de la República o la Avenida Bernardo Quintana.",
+        "recommendations": [
+          "Evitar, en la medida de lo posible, la zona del operativo.",
+          "Utilizar rutas alternas para evitar retrasos.",
+          "Mantenerse informado a través de fuentes oficiales y medios de comunicación."
+        ],
+        "estimated_time_of_impact": "Se espera que las afectaciones viales persistan durante la duración del operativo.  Se recomienda a los conductores estar atentos a las actualizaciones de tráfico y planificar sus rutas en consecuencia."
+      }
+    }
+  },
+  {
+    "timestamp": "2025-04-02T20:10:26.174381",
+    "incidents": [
+      {
+        "titulo": "Noticias de Querétaro - Quadratin",
+        "url": "https://queretaro.quadratin.com.mx/",
+        "lugar": "inmediaciones del Anillo Vial Fray Junípero Serra",
+        "fecha": null,
+        "hora": null,
+        "tipo": "operativo de rutina",
+        "gravedad": null,
+        "resumen": "Se menciona un operativo de rutina en las inmediaciones del Anillo Vial Fray Junípero Serra.",
+        "impacto_vial": "Anillo Vial Fray Junípero Serra",
+        "coordenadas": {
+          "lat": 20.58806,
+          "lng": -100.38806
+        }
+      },
+      {
+        "titulo": "Noticias Recientes - Municipio de Querétaro",
+        "url": "https://municipiodequeretaro.gob.mx/noticias-recientes/",
+        "lugar": null,
+        "fecha": null,
+        "hora": null,
+        "tipo": null,
+        "gravedad": null,
+        "resumen": "La información proporcionada es sobre los horarios de atención del Municipio de Querétaro y datos de contacto de diferentes dependencias. No se reporta ningún incidente.",
+        "impacto_vial": "ninguna",
+        "coordenadas": null
+      },
+      {
+        "titulo": "Últimas Noticias y Eventos de Inseguridad en Querétaro - N+",
+        "url": "https://www.nmas.com.mx/temas/inseguridad-queretaro/",
+        "lugar": null,
+        "fecha": null,
+        "hora": null,
+        "tipo": "ataque armado",
+        "gravedad": "alta",
+        "resumen": "Un ataque armado en Querétaro resultó en la muerte de tres personas y una persona herida.",
+        "impacto_vial": "ninguna",
+        "coordenadas": null
+      },
+      {
+        "titulo": "Seguridad - Diario de Querétaro",
+        "url": "https://oem.com.mx/diariodequeretaro/tags/temas/seguridad",
+        "lugar": "Universidad",
+        "fecha": null,
+        "hora": null,
+        "tipo": "riña vial",
+        "gravedad": null,
+        "resumen": "No hay detenidos por una riña vial en la Universidad.",
+        "impacto_vial": null,
+        "coordenadas": {
+          "lat": 20.5989564,
+          "lng": -100.387492
+        }
+      },
+      {
+        "titulo": "Supervisan alcaldes de la zona metropolitana operativo de seguridad",
+        "url": "https://oem.com.mx/diariodequeretaro/local/supervisan-alcaldes-de-la-zona-metropolitana-operativo-de-seguridad-22141673",
+        "lugar": null,
+        "fecha": null,
+        "hora": null,
+        "tipo": "accidente aéreo (turbulencias)",
+        "gravedad": "media",
+        "resumen": "Un vuelo presentó turbulencias después de una hora en el aire, según testimonios.",
+        "impacto_vial": "ninguna",
+        "coordenadas": null
+      }
+    ],
+    "main_incident": {
+      "id": 0,
+      "noticia": "Noticias de Querétaro - Quadratin",
+      "url": "https://queretaro.quadratin.com.mx/",
+      "fecha_publicacion": "Fecha no encontrada",
+      "lugar": "inmediaciones del Anillo Vial Fray Junípero Serra",
+      "fecha_incidente": null,
+      "hora_incidente": null,
+      "tipo_incidente": "operativo de rutina",
+      "gravedad": null,
+      "resumen": "Se menciona un operativo de rutina en las inmediaciones del Anillo Vial Fray Junípero Serra.",
+      "impacto_vial": "Anillo Vial Fray Junípero Serra"
+    },
+    "analysis": {
+      "pattern": "Dado que se trata de un operativo de rutina, es probable que estos ocurran en horarios de alta afluencia vehicular para maximizar la visibilidad y efectividad. Podrían repetirse en intervalos regulares (semanales, quincenales, mensuales) en diferentes puntos del Anillo Vial Fray Junípero Serra.",
+      "impact": "Moderado",
+      "risk_factors": [
+        "Presencia de autoridades realizando el operativo.",
+        "Reducción de carriles por el operativo.",
+        "Posible congestión vehicular debido a la lentitud de los vehículos al pasar por el operativo.",
+        "Curiosidad de los conductores, lo que puede generar retrasos."
+      ],
+      "affected_routes": [
+        "Anillo Vial Fray Junípero Serra (en el tramo donde se realiza el operativo)"
+      ],
+      "estimated_duration": "Entre 30 minutos y 2 horas, dependiendo de la duración del operativo y la congestión vehicular resultante."
+    },
+    "recommendations": [
+      {
+        "recomendacion": "Si te diriges hacia el sur por el Anillo Vial Fray Junípero Serra, considera tomar la salida hacia la Avenida Paseo de la República y luego incorporarte a la Avenida Bernardo Quintana para evitar el operativo y posibles retrasos."
+      },
+      {
+        "recomendacion": "Si vienes desde la colonia Jurica Campestre y necesitas incorporarte al Anillo Vial Fray Junípero Serra en dirección norte, utiliza la Avenida Jurica y luego la Avenida del Sol para rodear la zona del operativo y acceder al anillo vial por otro punto."
+      },
+      {
+        "recomendacion": "Para quienes se dirigen hacia el centro de Querétaro desde la zona de El Refugio, la mejor opción es evitar el tramo afectado del Anillo Vial Fray Junípero Serra y tomar la Avenida Prolongación Bernardo Quintana, después la Avenida Constituyentes y finalmente la Avenida Universidad."
+      },
+      {
+        "recomendacion": "Si tu destino es la colonia Milenio III y vienes desde la carretera a México, evita el Anillo Vial Fray Junípero Serra y desvíate por la Avenida Pie de la Cuesta, luego toma la Avenida de la Luz y finalmente la calle Cerro de las Campanas para llegar a tu destino."
+      },
+      {
+        "recomendacion": "Si te encuentras en la colonia Lomas de Querétaro y necesitas llegar al centro, evita el tramo afectado del Anillo Vial Fray Junípero Serra. En su lugar, utiliza la Avenida Sombrerete, luego la Avenida Tecnológico y finalmente la Avenida Zaragoza."
+      }
+    ],
+    "reports": {
+      "authorities": {
+        "reporte": "INFORME TÉCNICO DE SEGURIDAD VIAL\n\nFecha de Elaboración: [Fecha Actual]\n\n1.  Resumen Ejecutivo:\n    Se reporta un operativo de rutina en las inmediaciones del Anillo Vial Fray Junípero Serra. Adicionalmente, se registró un ataque armado en Querétaro con un impacto vial 'ninguna'.\n\n2.  Detalles del Incidente Principal:\n    *   Tipo de Incidente: Operativo de rutina.\n    *   Lugar: Inmediaciones del Anillo Vial Fray Junípero Serra.\n    *   Impacto Vial: Anillo Vial Fray Junípero Serra.\n    *   Gravedad: No especificada.\n    *   Coordenadas Aproximadas: 20.58806, -100.38806\n\n3.  Análisis de Impacto:\n    *   Impacto: Moderado, debido a la presencia del operativo.\n    *   Posibles Afectaciones: Retrasos en el flujo vehicular en el Anillo Vial Fray Junípero Serra.\n\n4.  Recomendaciones:\n    *   Monitoreo constante del flujo vehicular en la zona.\n    *   Implementación de señalización adecuada para guiar a los conductores.\n    *   Coordinación con agentes de tránsito para agilizar el tráfico y minimizar los tiempos de espera.\n\n5.  Incidentes Recientes Adicionales:\n    *   Tipo: Ataque armado.\n    *   Lugar: Querétaro.\n    *   Impacto Vial: Ninguna.\n    *   Gravedad: Alta (3 muertos, 1 herido).\n\n6.  Estimación de Tiempos de Afectación:\n    *   Operativo: La duración del operativo es indeterminada. Se recomienda monitorear la situación.\n    *   Ataque Armado: No se especifica impacto vial directo, pero se recomienda monitorear posibles cierres o desvíos en la zona afectada.\n\n7.  Rutas Alternativas Recomendadas (Derivadas del análisis):\n    *   Para quienes se dirigen al sur por el Anillo Vial Fray Junípero Serra: Tomar la salida hacia la Avenida Paseo de la República y luego incorporarse a la Avenida Bernardo Quintana.\n    *   Para quienes se incorporan al Anillo Vial Fray Junípero Serra en dirección norte desde Jurica Campestre: Utilizar la Avenida Jurica y luego la Avenida del Sol.\n\n8.  Próximos Pasos:\n    *   Mantener la vigilancia constante en el Anillo Vial Fray Junípero Serra.\n    *   Evaluar la necesidad de desplegar recursos adicionales en la zona.\n    *   Recopilar información adicional sobre el ataque armado y su posible impacto en la vialidad.",
+        "rutas_afectadas": [
+          "Anillo Vial Fray Junípero Serra"
+        ],
+        "recomendaciones_alternativas": [
+          "Si te diriges hacia el sur por el Anillo Vial Fray Junípero Serra, considera tomar la salida hacia la Avenida Paseo de la República y luego incorporarte a la Avenida Bernardo Quintana para evitar el operativo y posibles retrasos.",
+          "Si vienes desde la colonia Jurica Campestre y necesitas incorporarte al Anillo Vial Fray Junípero Serra en dirección norte, utiliza la Avenida Jurica y luego la Avenida del Sol para rodear la zona del operativo y acceder al anillo vial por otro punto."
+        ],
+        "tiempos_estimados": "La duración del operativo es indeterminada. Se recomienda monitorear la situación. El ataque armado no tiene impacto vial directo reportado."
+      },
+      "citizens": {
+        "reporte": "AVISO IMPORTANTE DE TRÁNSITO\n\nSe informa sobre un operativo de rutina en las inmediaciones del Anillo Vial Fray Junípero Serra. Se recomienda tomar precauciones y considerar rutas alternativas.\n\n1.  Vialidades Afectadas:\n    *   Anillo Vial Fray Junípero Serra.\n\n2.  Recomendaciones de Rutas Alternativas:\n    *   Si te diriges hacia el sur por el Anillo Vial Fray Junípero Serra, toma la salida hacia la Avenida Paseo de la República y luego incorpórate a la Avenida Bernardo Quintana.\n    *   Si vienes desde Jurica Campestre y necesitas incorporarte al Anillo Vial Fray Junípero Serra en dirección norte, utiliza la Avenida Jurica y luego la Avenida del Sol.\n\n3.  Tiempos Estimados de Afectación:\n    *   Se espera que el operativo cause retrasos.  Se recomienda planificar tu viaje con anticipación y considerar tiempo adicional para llegar a tu destino.",
+        "rutas_afectadas": [
+          "Anillo Vial Fray Junípero Serra"
+        ],
+        "recomendaciones_alternativas": [
+          "Si te diriges hacia el sur por el Anillo Vial Fray Junípero Serra, considera tomar la salida hacia la Avenida Paseo de la República y luego incorporarte a la Avenida Bernardo Quintana para evitar el operativo y posibles retrasos.",
+          "Si vienes desde la colonia Jurica Campestre y necesitas incorporarte al Anillo Vial Fray Junípero Serra en dirección norte, utiliza la Avenida Jurica y luego la Avenida del Sol para rodear la zona del operativo y acceder al anillo vial por otro punto."
+        ],
+        "tiempos_estimados": "Se espera que el operativo cause retrasos. Planifica tu viaje con anticipación."
+      },
+      "media": {
+        "reporte": "QUERÉTARO: OPERATIVO EN EL ANILLO VIAL FRAY JUNÍPERO SERRA GENERA AFECTACIONES VIALES\n\nQUERÉTARO, QRO. - Un operativo de rutina en las inmediaciones del Anillo Vial Fray Junípero Serra está generando afectaciones en el tráfico vehicular. Las autoridades recomiendan a los conductores tomar precauciones y considerar rutas alternas.\n\n1.  Vialidad Afectada:\n    *   Anillo Vial Fray Junípero Serra.\n\n2.  Recomendaciones de Rutas Alternativas:\n    *   Para quienes se dirigen al sur por el Anillo Vial Fray Junípero Serra, se sugiere tomar la salida hacia la Avenida Paseo de la República y luego incorporarse a la Avenida Bernardo Quintana.\n    *   Conductores que se incorporan al Anillo Vial Fray Junípero Serra en dirección norte desde Jurica Campestre, pueden utilizar la Avenida Jurica y luego la Avenida del Sol.\n\n3.  Estimación de Tiempos de Afectación:\n    *   Se espera que el operativo cause demoras en el tráfico.  Se recomienda a los automovilistas estar atentos a las indicaciones de las autoridades y planificar sus traslados con tiempo.",
+        "rutas_afectadas": [
+          "Anillo Vial Fray Junípero Serra"
+        ],
+        "recomendaciones_alternativas": [
+          "Para quienes se dirigen al sur por el Anillo Vial Fray Junípero Serra, se sugiere tomar la salida hacia la Avenida Paseo de la República y luego incorporarse a la Avenida Bernardo Quintana.",
+          "Conductores que se incorporan al Anillo Vial Fray Junípero Serra en dirección norte desde Jurica Campestre, pueden utilizar la Avenida Jurica y luego la Avenida del Sol."
+        ],
+        "tiempos_estimados": "Se espera que el operativo cause demoras en el tráfico."
+      }
+    }
+  },
+  {
     "timestamp": "2025-03-29T05:45:31.346095",
     "incidents": [
       {

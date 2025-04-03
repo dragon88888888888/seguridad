@@ -20,9 +20,15 @@ RUN mkdir -p /app/data
 # Variables de entorno
 ENV PYTHONUNBUFFERED=1
 ENV PORT=8080
+ENV TIMEOUT=300
+ENV WORKERS=2
 
 # Exponer puerto
 EXPOSE 8080
 
-# Comando para iniciar la aplicación
-CMD gunicorn --bind 0.0.0.0:$PORT app:app
+# Comando para iniciar la aplicación con timeouts ajustados
+CMD gunicorn --bind 0.0.0.0:$PORT \
+    --timeout $TIMEOUT \
+    --workers $WORKERS \
+    --log-level debug \
+    app:app
