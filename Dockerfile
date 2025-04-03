@@ -21,7 +21,9 @@ RUN mkdir -p /app/data
 ENV PYTHONUNBUFFERED=1
 ENV PORT=8080
 ENV TIMEOUT=300
-ENV WORKERS=2
+ENV WORKERS=1
+ENV WORKER_CLASS=gthread
+ENV THREADS=4
 
 # Exponer puerto
 EXPOSE 8080
@@ -30,5 +32,8 @@ EXPOSE 8080
 CMD gunicorn --bind 0.0.0.0:$PORT \
     --timeout $TIMEOUT \
     --workers $WORKERS \
-    --log-level debug \
+    --worker-class $WORKER_CLASS \
+    --threads $THREADS \
+    --log-level info \
+    --preload \
     app:app
